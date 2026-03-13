@@ -23,7 +23,7 @@ redirect_from:
 <span class='anchor' id='-xl'></span>
 
 # 🎓 学历
-- *2023.09 - 至今*, <a href="https://www.hrbeu.edu.cn/"><img class="svg" src="/images/HUST_logo.svg" width="23pt"></a> 哈尔滨工程大学 计算机科学与技术学院, 黑龙江哈尔滨, 本科
+- *2023.09 - 至今*, <a href="https://www.hrbeu.edu.cn/"><img class="svg" src="/images/HEU.jpg" width="23pt"></a> 哈尔滨工程大学 计算机科学与技术学院, 黑龙江哈尔滨, 本科
   - 加权均分: 94.9/100，专业排名: **1/242**
   - 国家奖学金、小米特等奖学金、黑龙江省三好学生、赓续奖学金、校优秀学生干部
 
@@ -105,3 +105,4 @@ redirect_from:
 # 💻 科研技能
 - **程序语言及工具**: C/C++, Python, Matlab, LaTeX
 - **英语能力**: CET-6: 522, CET-4: 497，能独立阅读英文文献，口语能力良好
+
