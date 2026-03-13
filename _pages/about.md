@@ -30,7 +30,7 @@ redirect_from:
 # 📝 科研成果
 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/comp.png' alt="sym" width="100%"></div></div>v>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/comp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	*Affordance Agent Harness: Verification-Gated Skill Orchestration*. **ECCV** (CCF-B, 计算机视觉顶会), 在投.  
@@ -98,6 +98,7 @@ redirect_from:
 # 💻 科研技能
 - **程序语言及工具**: C/C++, Python, Matlab, LaTeX
 - **英语能力**: CET-6: 522, CET-4: 497，能独立阅读英文文献，口语能力良好
+
 
 
 
