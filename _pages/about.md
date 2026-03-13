@@ -18,7 +18,6 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 我是哈尔滨工程大学计算机科学与技术学院计算机科学与技术专业本科生师嘉昊，目前聚焦于具身智能、多智能体系统、多视图学习与证据理论相关研究。截止目前，我已以第一作者或学生第一作者身份发表 4 篇论文，在投 4 篇论文，并拥有 2 项软件著作权。
- <a href='https://scholar.google.com/citations?user=WMkMTb4AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=引用"></a>。
 
 我的研究领域包括：
 - 具身智能
@@ -76,6 +75,7 @@ redirect_from:
 - *2025.05*，中国大学生服务外包创新创业大赛，省三等奖
 - 
 <span class='anchor' id='-xshy'></span>
+
 
 
 
