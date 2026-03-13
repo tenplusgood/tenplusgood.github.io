@@ -32,7 +32,7 @@ redirect_from:
 # 📝 科研成果
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 在投</div><img src='images/comp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/comp.png' alt="sym" width="100%"></div></div>v>
 <div class='paper-box-text' markdown="1">
 
 -	*Affordance Agent Harness: Verification-Gated Skill Orchestration*. **ECCV** (CCF-B, 计算机视觉顶会), 在投.  
@@ -41,7 +41,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pattern Recognition 在投</div><img src='images/flowchat_new.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/flowchat_new.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	*Structure-Aware Prototype Guided Trusted Multi-View Classification*. **Pattern Recognition** (CCF-B, 中科院一区, JCR Q1), 在投.  
@@ -50,7 +50,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TFS 已见刊</div><img src='images/chart.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/chart.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	*Parameter-Free Dual-Granularity Weighted Multi-View Fuzzy c-Means Clustering*. **IEEE Transactions on Fuzzy Systems** (CCF-B, 中科院一区, JCR Q1), 已见刊.  
@@ -100,5 +100,6 @@ redirect_from:
 # 💻 科研技能
 - **程序语言及工具**: C/C++, Python, Matlab, LaTeX
 - **英语能力**: CET-6: 522, CET-4: 497，能独立阅读英文文献，口语能力良好
+
 
 
