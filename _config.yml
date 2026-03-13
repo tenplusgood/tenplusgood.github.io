@@ -7,8 +7,8 @@
 
 # Site Settings
 title                    : "师嘉昊"
-description              : "具身智能、多智能体系统、多视图学习"
-repository               : "tenplusgood/tenplusgood.github.io"
+description              : "计算机科学与技术"
+repository               : 
 google_scholar_stats_use_cdn : false
 
 # google analytics
@@ -22,10 +22,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "师嘉昊"
-  avatar           : "images/profile.svg"
+  avatar           : "images/android-chrome-512x512.png"
   bio              : "哈尔滨工程大学"
   location         : "黑龙江 哈尔滨"
-  employer         : #"Hefei General Machinery Research Institute"
+  employer         :
   pubmed           : 
   googlescholar    :
   email            : "shijiahao131@hrbeu.edu.cn"
@@ -37,18 +37,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "tenplusgood"
+  github           :
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      :
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
+  linkedin         :
+  dblp             :
   orcid            :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
   twitter          : 
