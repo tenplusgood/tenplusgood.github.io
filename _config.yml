@@ -1,57 +1,69 @@
-title: "师嘉昊"
-description: "具身智能、多智能体系统、多视图学习"
-repository: "tenplusgood/tenplusgood.github.io"
-google_scholar_stats_use_cdn: false
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
 
-google_analytics_id:
+# Site Settings
+title                    : "师嘉昊"
+description              : "具身智能、多智能体系统、多视图学习"
+repository               : "tenplusgood/tenplusgood.github.io"
+google_scholar_stats_use_cdn : false
 
-google_site_verification:
-bing_site_verification:
-baidu_site_verification:
+# google analytics
+google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 
+# SEO Related
+google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
+bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
+baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+
+# Site Author
 author:
-  name: "师嘉昊"
-  avatar: "images/profile-placeholder.svg"
-  bio: "哈尔滨工程大学"
-  location: "黑龙江 哈尔滨"
-  employer:
-  pubmed:
-  googlescholar:
-  email: "shijiahao131@hrbeu.edu.cn"
-  researchgate:
-  uri:
-  bitbucket:
-  codepen:
-  dribbble:
-  flickr:
-  facebook:
-  foursquare:
-  github: "tenplusgood"
-  google_plus:
-  keybase:
-  instagram:
-  impactstory:
-  lastfm:
-  linkedin:
-  dblp:
-  orcid:
-  pinterest:
-  soundcloud:
-  stackoverflow:
-  steam:
-  tumblr:
-  twitter:
-  vine:
-  weibo:
-  xing:
-  youtube:
-  wikipedia:
+  name             : "师嘉昊"
+  avatar           : "images/profile.svg"
+  bio              : "哈尔滨工程大学"
+  location         : "黑龙江 哈尔滨"
+  employer         : #"Hefei General Machinery Research Institute"
+  pubmed           : 
+  googlescholar    :
+  email            : "shijiahao131@hrbeu.edu.cn"
+  researchgate     :
+  uri              : 
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "tenplusgood"
+  google_plus      :
+  keybase          :
+  instagram        :
+  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  lastfm           :
+  linkedin         : # e.g., "linkedin username"
+  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
+  orcid            :
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          : 
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
 
+
+# Reading Files
 include:
   - .htaccess
   - _pages
   - files
-
 exclude:
   - docs
   - google_scholar_crawler
@@ -79,20 +91,22 @@ exclude:
   - package.json
   - tmp
   - vendor
-
 keep_files:
   - .git
   - .svn
-
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+
+# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
+
+# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -103,7 +117,9 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Defaults
 defaults:
+  # _pages
   - scope:
       path: ""
       type: pages
@@ -111,20 +127,26 @@ defaults:
       layout: default
       author_profile: true
 
+
+# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+
+# Outputting
 permalink: /:categories/:title/
-timezone: Asia/Shanghai
+timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
-
+# mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -132,6 +154,9 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+
+# HTML Compression
+# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
