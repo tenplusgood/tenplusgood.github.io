@@ -98,9 +98,15 @@ redirect_from:
   
 ### 软件著作权
 ---
-- web端口对接服务系统
-- 智擎御港——基于轻量化YOLOV11与Attention-BILSTM的智慧港湾系统
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/zhgw.png' alt="zhgw" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+- 智擎御港——基于轻量化YOLOV11与Attention-BILSTM的智慧港湾系统
+- web端口对接服务系统
+
+</div>
+</div>
 
 <span class='anchor' id='-jsjl'></span>
 
