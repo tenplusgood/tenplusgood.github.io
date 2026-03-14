@@ -34,7 +34,7 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
 
 -	*Affordance Agent Harness: Verification-Gated Skill Orchestration*. **ECCV** (CCF-B, 计算机视觉顶会), 在投.  
-设计并实现了一个基于验证门控的具身智能技能编排框架(A-Harness)，通过闭环验证机制与双层记忆增强，在显著降低推理成本的同时，实现了开放世界下高精度的交互点定位。
+  > 设计并实现了一个基于验证门控的具身智能技能编排框架(A-Harness)，通过闭环验证机制与双层记忆增强，在显著降低推理成本的同时，实现了开放世界下高精度的交互点定位。
 
 </div>
 </div>
@@ -43,7 +43,7 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
 
 -	*Structure-Aware Prototype Guided Trusted Multi-View Classification*. **Pattern Recognition** (CCF-B, 中科院一区, JCR Q1), 在投.  
-引入了一种结构感知原型学习机制，并开发了一种原型引导的细粒度融合策略。
+  > 引入了一种结构感知原型学习机制，并开发了一种原型引导的细粒度融合策略。
 
 </div>
 </div>
@@ -52,13 +52,14 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
 
 -	*Parameter-Free Dual-Granularity Weighted Multi-View Fuzzy c-Means Clustering*. **IEEE Transactions on Fuzzy Systems** (CCF-B, 中科院一区, JCR Q1), 已见刊.  
-提出了一个无参数的双粒度加权多视图模糊c均值聚类框架，以及一种无参数的双层局部加权聚类算法。
+  > 提出了一个无参数的双粒度加权多视图模糊c均值聚类框架，以及一种无参数的双层局部加权聚类算法。
 
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/tailer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
+  
 - *AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. **ICML** (CCF-A), 在投.
   > 提出了一个成本感知框架(AgentTailor)，通过边判断机制评估通信边的语义贡献，并采用边预测网络(EPN)通过虚拟执行来估计边的效用。
 
