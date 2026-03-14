@@ -62,14 +62,14 @@ redirect_from:
 - *AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. **ICML** (CCF-A), 在投.
   > 提出了一个成本感知框架(AgentTailor)，通过边判断机制评估通信边的语义贡献，并采用边预测网络(EPN)通过虚拟执行来估计边的效用。
 
-- *Robust Multi-View k-Means via Exponential-Saturation Distance and Hierarchical Weight Learning*. **Expert Systems With Applications** (CCF-C, 中科院一区, JCR Q1), 在投.
-
 - *Non-Parametric Double-Layer Locally Weighted k-Means Clustering for Multi-View Data*. **Expert Systems With Applications** (CCF-C, 中科院一区, JCR Q1), 已见刊.
 
 - *A new evidential divergence measure for multisensor data fusion and its application in fault diagnosis*. **International Journal of General Systems** (中科院四区, JCR Q2), 已见刊.
 
 - *Auto-Weighted Neutrosophic Fuzzy Clustering for Multi-view Data*. **CMES-Computer Modeling in Engineering & Sciences** (中科院四区, JCR Q1), 已见刊.
 
+- *Robust Multi-View k-Means via Exponential-Saturation Distance and Hierarchical Weight Learning*. **Expert Systems With Applications** (CCF-C, 中科院一区, JCR Q1), 在投.
+  
 ### 软件著作权
 ---
 - web端口对接服务系统
