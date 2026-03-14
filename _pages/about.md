@@ -69,7 +69,7 @@ redirect_from:
 </div>
 </div> 
 
-<div class='paper-box'><div class='paper-box-image'><div style="display:flex;align-items:center;justify-content:center;height:100%;overflow:hidden;"><img src='images/evidence.png' alt="sym" style="transform:rotate(-90deg);display:block;margin:auto;"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/ev.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 - *A new evidential divergence measure for multisensor data fusion and its application in fault diagnosis*. **International Journal of General Systems** (中科院四区, JCR Q2), 已见刊.
