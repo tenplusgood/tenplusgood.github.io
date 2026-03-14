@@ -57,6 +57,8 @@ redirect_from:
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/tailer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 - *AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. **ICML** (CCF-A), 在投.
   > 提出了一个成本感知框架(AgentTailor)，通过边判断机制评估通信边的语义贡献，并采用边预测网络(EPN)通过虚拟执行来估计边的效用。
 
