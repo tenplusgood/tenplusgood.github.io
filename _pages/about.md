@@ -16,7 +16,7 @@ redirect_from:
 - 具身智能 (Embodied AI)
 - 多视图学习 (Multi-view Learning)
 - 多智能体系统 (Multi-agent Systems)
-- 聚类算法 (Clustering)
+- 多视图聚类 (Multi-view Clustering)
 - 证据理论 (Evidence Theory)
   
 
@@ -86,6 +86,9 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
   
 - *Auto-Weighted Neutrosophic Fuzzy Clustering for Multi-view Data*. **CMES-Computer Modeling in Engineering & Sciences** (中科院四区, JCR Q1), 已见刊.
+
+  </div>
+  </div> 
 
 - *Robust Multi-View k-Means via Exponential-Saturation Distance and Hierarchical Weight Learning*. **Expert Systems With Applications** (CCF-C, 中科院一区, JCR Q1), 在投.
   
