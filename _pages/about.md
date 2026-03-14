@@ -59,8 +59,8 @@ redirect_from:
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/tailer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-  
-- *AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. **ICML** (CCF-A), 在投.
+
+-	*AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. **ICML** (CCF-A), 在投.  
   > 该工作提出了一个成本感知框架(AgentTailor)，通过边判断机制评估通信边的语义贡献，并采用边预测网络(EPN)通过虚拟执行来估计边的效用。
 
 </div>
@@ -75,7 +75,7 @@ redirect_from:
 </div>
 </div> 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/evidence.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div style="display:flex;align-items:center;justify-content:center;height:100%;"><img src='images/evidence.png' alt="sym" style="max-height:180px;width:auto;"></div></div>
 <div class='paper-box-text' markdown="1">
   
 - *A new evidential divergence measure for multisensor data fusion and its application in fault diagnosis*. **International Journal of General Systems** (中科院四区, JCR Q2), 已见刊.
