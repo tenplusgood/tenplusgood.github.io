@@ -34,7 +34,7 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
 
 -	*Affordance Agent Harness: Verification-Gated Skill Orchestration*. **ECCV** (CCF-B, 计算机视觉顶会), 在投.  
-  > 设计并实现了一个基于验证门控的具身智能技能编排框架(A-Harness)，通过闭环验证机制与双层记忆增强，在显著降低推理成本的同时，实现了开放世界下高精度的交互点定位。
+  > 该工作设计并实现了一个基于验证门控的具身智能技能编排框架(A-Harness)，通过闭环验证机制与双层记忆增强，在显著降低推理成本的同时，实现了开放世界下高精度的交互点定位。
 
 </div>
 </div>
@@ -43,7 +43,7 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
 
 -	*Structure-Aware Prototype Guided Trusted Multi-View Classification*. **Pattern Recognition** (CCF-B, 中科院一区, JCR Q1), 在投.  
-  > 引入了一种结构感知原型学习机制，并开发了一种原型引导的细粒度融合策略。
+  > 该工作引入了一种结构感知原型学习机制，并开发了一种原型引导的细粒度融合策略。
 
 </div>
 </div>
@@ -52,7 +52,7 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
 
 -	*Parameter-Free Dual-Granularity Weighted Multi-View Fuzzy c-Means Clustering*. **IEEE Transactions on Fuzzy Systems** (CCF-B, 中科院一区, JCR Q1), 已见刊.  
-  > 提出了一个无参数的双粒度加权多视图模糊c均值聚类框架，以及一种无参数的双层局部加权聚类算法。
+  > 该工作提出了一个无参数的双粒度加权多视图模糊c均值聚类框架，以及一种无参数的双层局部加权聚类算法。
 
 </div>
 </div>
@@ -61,7 +61,7 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
   
 - *AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. **ICML** (CCF-A), 在投.
-  > 提出了一个成本感知框架(AgentTailor)，通过边判断机制评估通信边的语义贡献，并采用边预测网络(EPN)通过虚拟执行来估计边的效用。
+  > 该工作提出了一个成本感知框架(AgentTailor)，通过边判断机制评估通信边的语义贡献，并采用边预测网络(EPN)通过虚拟执行来估计边的效用。
 
  </div>
  </div> 
@@ -70,7 +70,8 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
   
 - *Non-Parametric Double-Layer Locally Weighted k-Means Clustering for Multi-View Data*. **Expert Systems With Applications** (CCF-C, 中科院一区, JCR Q1), 已见刊.
-
+  > 该工作提出了一种非参数双层局部加权k均值（NDL-WKM）方法，无需任何额外参数即可实现自适应和细粒度的聚类。
+  
  </div>
  </div> 
 
@@ -78,7 +79,8 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
   
 - *A new evidential divergence measure for multisensor data fusion and its application in fault diagnosis*. **International Journal of General Systems** (中科院四区, JCR Q2), 已见刊.
-
+  > 该工作基于证据理论提出了 SESM 散度，并设计了一种基于 SESM 散度和邓熵的多传感器数据融合方法。
+  
  </div>
  </div> 
 
@@ -86,11 +88,18 @@ redirect_from:
 <div class='paper-box-text' markdown="1">
   
 - *Auto-Weighted Neutrosophic Fuzzy Clustering for Multi-view Data*. **CMES-Computer Modeling in Engineering & Sciences** (中科院四区, JCR Q1), 已见刊.
-
+  > 该工作提出了一种自加权多视图中智模糊聚类（AW-MVNFC）算法，通过分层加权策略自适应地学习各个数据视图的贡献以及每个视图中每个特征的重要性。
   </div>
   </div> 
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/km.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
 - *Robust Multi-View k-Means via Exponential-Saturation Distance and Hierarchical Weight Learning*. **Expert Systems With Applications** (CCF-C, 中科院一区, JCR Q1), 在投.
+  > 该工作提出了一种基于指数饱和距离和分层权重学习的多视图Kmeans聚类框架。
+  
+  </div>
+  </div>
   
 ### 软件著作权
 ---
