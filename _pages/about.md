@@ -12,14 +12,8 @@ redirect_from:
 
 我是哈尔滨工程大学计算机科学与技术学院本科生，专业成绩排名 **1/242**，加权均分 **94.9/100**。以第一作者或学生第一作者身份发表 4 篇学术论文，在投 4 篇论文。
 
-我的研究领域包括：
-- 具身智能 (Embodied AI)
-- 多视图学习 (Multi-view Learning)
-- 多智能体系统 (Multi-agent Systems)
-- 多视图聚类 (Multi-view Clustering)
-- 证据理论 (Evidence Theory)
+我的研究领域包括：具身智能 (Embodied AI), 多视图学习 (Multi-view Learning), 多智能体系统 (Multi-agent Systems), 多视图聚类 (Multi-view Clustering), 证据理论 (Evidence Theory)
   
-
 <span class='anchor' id='-xl'></span>
 
 # 🎓 学历
