@@ -7,7 +7,9 @@
 
 # Site Settings
 title                    : "师嘉昊"
+title_en                 : "Jiahao Shi"
 description              : "计算机科学与技术"
+description_en           : "Computer Science and Technology"
 repository               : 
 google_scholar_stats_use_cdn : false
 
@@ -22,9 +24,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "师嘉昊"
+  name_en          : "Jiahao Shi"
   avatar           : "images/touxiang.png"
   bio              : "哈尔滨工程大学"
+  bio_en           : "Harbin Engineering University"
   location         : "黑龙江 哈尔滨"
+  location_en      : "Harbin, Heilongjiang, China"
   employer         :
   pubmed           : 
   googlescholar    :
