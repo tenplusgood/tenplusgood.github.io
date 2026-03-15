@@ -1,0 +1,19 @@
+# main links
+main:
+  - title: "About"
+    url: "/en/#about-me"
+
+  - title: "Education"
+    url: "/en/#-xl"
+
+  - title: "Publications"
+    url: "/en/#-kycg"
+
+  - title: "Competitions"
+    url: "/en/#-jsjl"
+
+  - title: "Honors"
+    url: "/en/#-ryjx"
+
+  - title: "Skills"
+    url: "/en/#-kyjn"
