@@ -8,9 +8,22 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-<title>{{ site.title }}的主页</title>
+{% if page.lang == "en" %}
+  {% assign seo_site_title = site.title_en | default: site.title %}
+  {% assign seo_locale = "en" %}
+  <title>Homepage of {{ seo_site_title }}</title>
+{% else %}
+  {% assign seo_site_title = site.title %}
+  {% assign seo_locale = "zh_CN" %}
+  <title>{{ seo_site_title }}的主页</title>
+{% endif %}
 
-{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
+{% if page.lang == "en" %}
+  {% assign default_description = site.description_en | default: site.description %}
+{% else %}
+  {% assign default_description = site.description %}
+{% endif %}
+{% assign seo_description = page.description | default: page.excerpt | default: default_description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
 {% endif %}
@@ -29,9 +42,9 @@
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
 
-<meta property="og:locale" content="en">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ site.title }}">
+<meta property="og:locale" content="{{ seo_locale }}">
+<meta property="og:site_name" content="{{ seo_site_title }}">
+<meta property="og:title" content="{{ seo_site_title }}">
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
