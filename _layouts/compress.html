@@ -1,0 +1,93 @@
+---
+---
+
+{%- capture _LINE_FEED -%}
+{% endcapture -%}
+
+{%- if site.compress_html.ignore.envs contains jekyll.environment -%}
+  {{ content }}
+{%- else -%}
+
+{%- capture _content -%}
+  {{ content }}
+{%- endcapture -%}
+
+{%- assign _profile = site.compress_html.profile -%}
+
+{%- if site.compress_html.endings == "all" -%}
+  {%- assign _endings = "html head body li dt dd optgroup option colgroup caption thead tbody tfoot tr td th" | split: " " -%}
+{%- else -%}
+  {%- assign _endings = site.compress_html.endings | split: " " -%}
+{%- endif -%}
+
+{%- for _element in _endings -%}
+  {%- capture _END -%}</{{ _element }}>{%- endcapture -%}
+  {%- assign _content = _content | remove: _END -%}
+{%- endfor -%}
+
+{%- if _profile and _endings -%}
+  {:   {{ _content | size }}
+  {%- for _element in _endings %}
+    -{{ _element }}
+  {%- endfor %}
+  }
+{%- endif -%}
+
+{%- if site.compress_html.startings == "all" -%}
+  {%- assign _startings = "html head body li dt dd optgroup option colgroup caption thead tbody tfoot tr td th" | split: " " -%}
+{%- else -%}
+  {%- assign _startings = site.compress_html.startings | split: " " -%}
+{%- endif -%}
+
+{%- for _element in _startings -%}
+  {%- capture _start -%}<{{ _element }}>{%- endcapture -%}
+  {%- assign _content = _content | remove: _start -%}
+{%- endfor -%}
+
+{%- if _profile and _startings -%}
+  {:   {{ _content | size }}
+  {%- for _element in _startings %}
+    -{{ _element }}
+  {%- endfor %}
+  }
+{%- endif -%}
+
+{%- if site.compress_html.clippings == "all" -%}
+  {%- assign _clippings = "html head title base link meta style body article section nav aside h1 h2 h3 h4 h5 h6 hgroup header footer address p hr blockquote ol ul li dl dt dd figure figcaption main div table caption colgroup col tbody thead tfoot tr td th script noscript form fieldset legend label input button select datalist optgroup option textarea output progress meter details summary template del ins" | split: " " -%}
+{%- else -%}
+  {%- assign _clippings = site.compress_html.clippings | split: " " -%}
+{%- endif -%}
+
+{%- for _element in _clippings -%}
+  {%- assign _edges = " <e]> </e]>" | replace: "e]", _element | split: " " -%}
+  {%- assign _content = _content | strip_newlines | split: _edges[0] | join -%}
+  {%- assign _content = _content | split: _edges[1] | join -%}
+{%- endfor -%}
+
+{%- if _profile and _clippings -%}
+  {:   {{ _content | size }}
+  {%- for _element in _clippings %}
+    -{{ _element }}
+  {%- endfor %}
+  }
+{%- endif -%}
+
+{%- assign _content = _content | split: _LINE_FEED -%}
+
+{%- capture _rebuilt -%}
+  {%- for _line in _content -%}
+    {%- assign _trimmed = _line | split: " " | join: " " -%}
+    {%- if _trimmed != empty or forloop.last -%}
+      {{ _line | append: _LINE_FEED }}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if _profile -%}
+  {:   {{ _rebuilt | size }}
+  }
+{%- endif -%}
+
+{{ _rebuilt }}
+
+{%- endif -%}
