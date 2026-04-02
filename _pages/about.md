@@ -17,8 +17,8 @@ redirect_from:
 <span class='anchor' id='-xl'></span>
 
 # 🎓 学历
-- *2023.09 - 至今*, <a href="https://www.hrbeu.edu.cn/"><img class="svg" src="/images/HEU.jpg" width="23pt"></a> 哈尔滨工程大学 计算机科学与技术学院, 黑龙江哈尔滨, 本科
-
+- *2023.09 - 至今*, <a href="https://www.hrbeu.edu.cn/"><img class="svg" src="/images/HEU.svg" width="23pt"></a> 哈尔滨工程大学 计算机科学与技术学院, 黑龙江哈尔滨, 本科
+  
 <span class='anchor' id='-kycg'></span>
 
 # 📝 科研成果
