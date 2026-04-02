@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="{{ page.lang | default: 'zh' }}" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
@@ -32,14 +32,10 @@ layout: compress
 <div class="footer_site">
 <hr/>
 <div class="footer_copyright">
-  {% if page.lang == "en" %}
-  © 2025 Harbin Engineering University · {{ site.author.name_en | default: site.author.name }} | Built on&nbsp
-  {% else %}
   © 2025 哈工程 · {{ site.author.name }} | 基于&nbsp
-  {% endif %}
   <a class="page_a"  href="https://github.com/RayeRen/acad-homepage.github.io">
   acad
-  </a>{% if page.lang == "en" %}&nbsp;template{% else %}&nbsp模板{% endif %}
+  </a>&nbsp模板
 </div>
 </div>
   </body>
