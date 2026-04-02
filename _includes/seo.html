@@ -8,21 +8,11 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-{% if page.lang == "en" %}
-  {% assign seo_site_title = site.title_en | default: site.title %}
-  {% assign seo_locale = "en" %}
-  <title>Homepage of {{ seo_site_title }}</title>
-{% else %}
-  {% assign seo_site_title = site.title %}
-  {% assign seo_locale = "zh_CN" %}
-  <title>{{ seo_site_title }}的主页</title>
-{% endif %}
+{% assign seo_site_title = site.title %}
+{% assign seo_locale = "zh_CN" %}
+<title>{{ seo_site_title }}的主页</title>
 
-{% if page.lang == "en" %}
-  {% assign default_description = site.description_en | default: site.description %}
-{% else %}
-  {% assign default_description = site.description %}
-{% endif %}
+{% assign default_description = site.description %}
 {% assign seo_description = page.description | default: page.excerpt | default: default_description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
