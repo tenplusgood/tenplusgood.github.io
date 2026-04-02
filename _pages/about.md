@@ -27,26 +27,8 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/comp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*Affordance Agent Harness: Verification-Gated Skill Orchestration*. **ECCV** (CCF-B, 计算机视觉顶会), 在投.  
-  > 该工作设计并实现了一个基于验证门控的具身智能技能编排框架(A-Harness)，通过闭环验证机制与双层记忆增强，在显著降低推理成本的同时，实现了开放世界下高精度的交互点定位。
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/flowchat_new.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
--	*Structure-Aware Prototype Guided Trusted Multi-View Classification*. **Pattern Recognition** (CCF-B, 中科院一区, JCR Q1), 在投.  
-  > 该工作引入了一种结构感知原型学习机制，并开发了一种原型引导的细粒度融合策略。
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/chart.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
--	*Parameter-Free Dual-Granularity Weighted Multi-View Fuzzy c-Means Clustering*. **IEEE Transactions on Fuzzy Systems** (CCF-B, 中科院一区, JCR Q1), 已见刊.  
-  > 该工作提出了一个无参数的双粒度加权多视图模糊c均值聚类框架，以及一种无参数的双层局部加权聚类算法。
+-	*Affordance Agent Harness: Verification-Gated Skill Orchestration*. Haojian Huang, **Jiahao Shi**, Yinchuan Li, Yingcong Chen (Submitted to **ECCV** 2026).  
+  > This work designed and implemented an embodied intelligent skill orchestration framework (A-Harness) based on verification gating. Through a closed-loop verification mechanism and dual-layer memory enhancement, it significantly reduces inference costs while achieving high-precision interaction point localization in an open world.
 
 </div>
 </div>
@@ -54,17 +36,35 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/tailer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. **ICML** (CCF-A), 在投.  
-  > 该工作提出了一个成本感知框架(AgentTailor)，通过边判断机制评估通信边的语义贡献，并采用边预测网络(EPN)通过虚拟执行来估计边的效用。
+-	*AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. Peiting Yang, **Jiahao Shi**, Caiyi Xu, Ming Liu, Yanxia Wu, Rongsheng Li (Submitted to **ICML** 2026).  
+  > This work proposes a cost-aware framework (AgentTailor) that evaluates the semantic contribution of communication edges through an edge-judgment mechanism and uses an edge prediction network (EPN) to estimate the utility of edges through virtual execution.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/flowchat_new.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+- *[Structure-Aware Prototype Guided Trusted Multi-View Classification](https://arxiv.org/abs/2511.21021)*. Haojian Huang, **Jiahao Shi**, Zhe Liu, Harold Haodong Chen, Han Fang, Hao Sun, Zhongjiang He (arxiv 2025).  
+  > This work introduces a structure-aware prototype learning mechanism and develops a prototype-guided fine-grained fusion strategy.
+  
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/chart.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	*[Parameter-Free Dual-Granularity Weighted Multi-View Fuzzy c-Means Clustering](https://www.researchgate.net/publication/399040101_Parameter-Free_Dual-Granularity_Weighted_Multi-View_Fuzzy_c-Means_Clustering)*. Zhe Liu, **Jiahao Shi**, Sukumar Letchmunan, Yulong Huang, Muhammet Deveci (**IEEE Transactions on Fuzzy Systems** 2026).  
+  > This work proposes a parameterless dual-granularity weighted multi-view fuzzy c-means clustering framework and a parameterless two-layer local weighted clustering algorithm.
 
 </div>
 </div> 
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/eswa.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-  
-- *Non-Parametric Double-Layer Locally Weighted k-Means Clustering for Multi-View Data*. **Expert Systems With Applications** (CCF-C, 中科院一区, JCR Q1), 已见刊.
-  > 该工作提出了一种非参数双层局部加权k均值（NDL-WKM）方法，无需任何额外参数即可实现自适应和细粒度的聚类。
+
+-	*[Non-Parametric Double-Layer Locally Weighted k-Means Clustering for Multi-View Data](https://www.sciencedirect.com/science/article/abs/pii/S0957417425046202)*. Zhe Liu, **Jiahao Shi**, Juan Liao, Wulfran Fendzi Mbasso, Mehdi Hosseinzadeh (**Expert Systems With Applications** 2026). 
+  > This work proposes a nonparametric two-layer locally weighted k-means (NDL-WKM) method that can achieve adaptive and fine-grained clustering without any additional parameters.
   
 </div>
 </div> 
@@ -72,8 +72,8 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/ev.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-- *A new evidential divergence measure for multisensor data fusion and its application in fault diagnosis*. **International Journal of General Systems** (中科院四区, JCR Q2), 已见刊.
-  > 该工作基于证据理论提出了 SESM 散度，并设计了一种基于 SESM 散度和邓熵的多传感器数据融合方法。
+- *[A new evidential divergence measure for multisensor data fusion and its application in fault diagnosis](https://www.tandfonline.com/doi/full/10.1080/03081079.2025.2513388)*. **Jiahao Shi**, Sukumar Letchmunan, Mehdi Hosseinzadeh, Jing Yang, Zhe Liu (**International Journal of General Systems** 2025).
+  > This work proposes SESM divergence based on evidence theory and designs a multi-sensor data fusion method based on SESM divergence and Deng entropy.
   
 </div>
 </div> 
@@ -81,8 +81,8 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/NCM.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-- *Auto-Weighted Neutrosophic Fuzzy Clustering for Multi-view Data*. **CMES-Computer Modeling in Engineering & Sciences** (中科院四区, JCR Q1), 已见刊.
-  > 该工作提出了一种自加权多视图中智模糊聚类（AW-MVNFC）算法，通过分层加权策略自适应地学习各个数据视图的贡献以及每个视图中每个特征的重要性。
+- *[Auto-Weighted Neutrosophic Fuzzy Clustering for Multi-view Data](https://www.sciencedirect.com/org/science/article/pii/S1526149225003066)*. Zhe Liu, **Jiahao Shi**, Dania Santina, Yulong Huang, Nabil Mlaiki (**CMES-Computer Modeling in Engineering & Sciences** 2025).
+  > This work proposes a self-weighted multi-view intelligent fuzzy clustering (AW-MVNFC) algorithm, which adaptively learns the contribution of each data view and the importance of each feature in each view through a hierarchical weighting strategy.
 
 </div>
 </div> 
