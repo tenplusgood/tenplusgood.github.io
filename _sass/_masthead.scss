@@ -3,27 +3,10 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
-        {% if page.lang == "en" %}
-          {% assign navigation = site.data.navigation_en.main %}
-          {% assign switch_url = page.lang_switch_url | default: "/" %}
-          {% assign switch_label = "中文" %}
-          {% assign switch_icon = "/images/cn.svg" %}
-        {% else %}
-          {% assign navigation = site.data.navigation.main %}
-          {% assign switch_url = page.lang_switch_url | default: "/en/" %}
-          {% assign switch_label = "English" %}
-          {% assign switch_icon = "/images/en.svg" %}
-        {% endif %}
         <ul class="visible-links">
-          {% for link in navigation %}
+          {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item">
-            <a href="{{ switch_url }}">
-              <img class="svg" src="{{ switch_icon }}" width="20pt">
-              {{ switch_label }}
-            </a>
-          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
