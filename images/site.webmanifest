@@ -3,9 +3,9 @@
     "short_name": "",
     "icons": [
        {
-          "src": "/images/HEU.jpg",
-          "sizes": "224x225",
-          "type": "image/jpeg"
+          "src": "/images/HEU.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
        }
     ],
     "theme_color": "#FFFFFF",
