@@ -1,17 +1,10 @@
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
-{% if page.lang == "en" %}
-  {% assign author_name = author.name_en | default: author.name %}
-  {% assign author_bio = author.bio_en | default: author.bio %}
-  {% assign author_location = author.location_en | default: author.location %}
-  {% assign author_description = site.description_en | default: site.description %}
-{% else %}
-  {% assign author_name = author.name %}
-  {% assign author_bio = author.bio %}
-  {% assign author_location = author.location %}
-  {% assign author_description = site.description %}
-{% endif %}
+{% assign author_name = author.name %}
+{% assign author_bio = author.bio %}
+{% assign author_location = author.location %}
+{% assign author_description = site.description %}
 
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
