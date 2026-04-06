@@ -10,7 +10,7 @@
 
 {% assign seo_site_title = site.title %}
 {% assign seo_locale = "zh_CN" %}
-<title>{{ seo_site_title }}的主页</title>
+<title>{{ page.title | default: seo_site_title }}</title>
 
 {% assign default_description = site.description %}
 {% assign seo_description = page.description | default: page.excerpt | default: default_description %}
