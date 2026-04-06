@@ -2,12 +2,15 @@
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
 # Site Settings
 title                    : "师嘉昊"
 description              : "计算机科学与技术"
 repository               : tenplusgood/tenplusgood.github.io
-url                      : "https://tenplusgood.github.io" # 补全你的网站主域名
-baseurl                  : "" # 确保这里是空字符串，除非你的网站在子目录下
+url                      : "https://tenplusgood.github.io"
+baseurl                  : ""
 google_scholar_stats_use_cdn : false
 
 # google analytics
@@ -160,6 +163,6 @@ whitelist:
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
-  clippings: all
+  clippings: [] # Disable clippings as it breaks layout
   ignore:
     envs: development
