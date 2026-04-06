@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "师嘉昊"
-  avatar           : "images/touxiang.png"
+  avatar           : "images/touxiang.svg"
   bio              : "哈尔滨工程大学"
   location         : "黑龙江 哈尔滨"
   employer         :
