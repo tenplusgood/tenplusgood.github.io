@@ -10,19 +10,16 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-我是哈尔滨工程大学计算机科学与技术学院本科生，专业成绩排名 **1/242**，加权均分 **94.9/100**。以第一作者或学生第一作者身份发表 4 篇学术论文，在投 4 篇论文。
+Jiahao Shi is an undergraduate student at Harbin Engineering University, majoring in Computer Science and Technology, where he ranks **1st** out of 242 students(1/242) with a weighted average of **94.9/100**. His research interests span Embodied AI, Multi-agent Systems, Trusted AI and Multi-view Clustering. He is dedicated to advancing the frontiers of intelligent agents and reliable data fusion.
 
-我的研究领域包括：具身智能 (Embodied AI), 多视图学习 (Multi-view Learning), 多智能体系统 (Multi-agent Systems), 多视图聚类 (Multi-view Clustering), 证据理论 (Evidence Theory)
-  
 <span class='anchor' id='-xl'></span>
 
-# 🎓 学历
-- *2023.09 - 至今*, <a href="https://www.hrbeu.edu.cn/"><img class="jpg" src="/images/HEU.jpg" width="23pt"></a> 哈尔滨工程大学 计算机科学与技术学院, 黑龙江哈尔滨, 本科
+# 🎓 Educations
+- *2023.09 - 至今*, <a href="https://www.hrbeu.edu.cn/"><img class="jpg" src="/images/HEU.jpg" width="23pt"></a> Harbin Engineering University, Computer Science and Technology, Heilongjiang, Harbin, Undergraduate student
   
 <span class='anchor' id='-kycg'></span>
 
-# 📝 科研成果
-
+# 📝 Publications & Preprints
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/comp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -96,7 +93,7 @@ redirect_from:
 </div>
 </div>
   
-### 软件著作权
+### Software copyright
 ---
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/zhgw.png' alt="zhgw" width="100%"></div></div>
@@ -110,7 +107,7 @@ redirect_from:
 
 <span class='anchor' id='-jsjl'></span>
 
-# 🏅 竞赛经历
+# 🏅 Competition Awards
 - *2025.08* 第18届中国大学生计算机设计大赛 `国家级三等奖` `省一等奖`
 - *2025.08* 中国大学生机器博弈创新设计大赛 `国家级一等奖`
 - *2025.04* 美国大学生数学建模竞赛 `H奖`
@@ -122,7 +119,7 @@ redirect_from:
 
 <span class='anchor' id='-ryjx'></span>
 
-# 🏛️ 荣誉奖项
+# 🏛️ Honors
 - *2024-03* 2023年秋季学期校优秀学生一等奖学金（1k，5%）
 - *2024-04* 赓续奖学金（1k，0.2%）
 - *2024-09* 2023-2024年度奖学金：国家奖学金（10k）
@@ -138,9 +135,9 @@ redirect_from:
 
 <span class='anchor' id='-kyjn'></span>
 
-# 💻 科研技能
-- **程序语言及工具**: C/C++, Python, Matlab, LaTeX
-- **英语能力**: CET-6: 522
+# 💻 Skills
+- **Programming languages ​​and tools**: C/C++, Python, Matlab, LaTeX
+- **English proficiency**: CET-6: 522
 
 
 
