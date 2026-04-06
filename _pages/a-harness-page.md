@@ -8,8 +8,8 @@ title: "A-Harness: Verification-Gated Skill Orchestration"
 <h1 class="title is-1">Affordance Agent Harness: Verification-Gated Skill Orchestration</h1>
 
 <div class="authors">
-  <a href="https://tenplusgood.github.io/">Haojian Huang</a><sup>1*</sup>, 
-  <strong>Jiahao Shi</strong><sup>1*</sup>, 
+  Haojian Huang<sup>1*</sup>, 
+  <a href="https://tenplusgood.github.io/"><strong>Jiahao Shi</strong><sup>1*</sup>, 
   Yinchuan Li<sup>2</sup>, 
   Yingcong Chen<sup>1†</sup>
 </div>
