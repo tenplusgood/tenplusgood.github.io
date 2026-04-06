@@ -8,15 +8,15 @@ title: "A-Harness: Verification-Gated Skill Orchestration"
 <h1 class="title is-1">Affordance Agent Harness: Verification-Gated Skill Orchestration</h1>
 
 <div class="authors">
-  <a href="http://www.wonghougin.me/">Haojian Huang</a><sup>1*</sup>, 
-  <a href="https://tenplusgood.github.io/"><strong>Jiahao Shi</strong></a><sup>1*</sup>, 
-  Yinchuan Li<sup>2</sup>, 
-  Yingcong Chen<sup>1†</sup>
+  <a href="http://www.wonghougin.me/">Haojian Huang</a><sup>1,2</sup>, 
+  <a href="https://tenplusgood.github.io/"><strong>Jiahao Shi</strong></a><sup>2,3</sup>, 
+  Yinchuan Li<sup>1,2</sup>, 
+  Yingcong Chen<sup>1,2†</sup>
 </div>
 
 <div class="affiliations">
-  <sup>1</sup>Harbin Engineering University, <sup>2</sup>Huawei Noah's Ark Lab<br>
-  <sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author
+  <sup>1</sup>HKUST(GZ), <sup>2</sup>Knowin, <sup>3</sup>Harbin Engineering University<br>
+  <sup>†</sup>Corresponding Author
 </div>
 
 <!-- 链接按钮组 -->
