@@ -24,7 +24,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/comp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*Affordance Agent Harness: Verification-Gated Skill Orchestration*. Haojian Huang, **Jiahao Shi**, Yinchuan Li, Yingcong Chen (Submitted to **ECCV** 2026).  
+-	*Affordance Agent Harness: Verification-Gated Skill Orchestration*. Haojian Huang, **Jiahao Shi**, Yinchuan Li, Yingcong Chen (Submitted to **ECCV** 2026). [[Project Page]](/A-Harness-page/)   
   > This work designed and implemented an embodied intelligent skill orchestration framework (A-Harness) based on verification gating. Through a closed-loop verification mechanism and dual-layer memory enhancement, it significantly reduces inference costs while achieving high-precision interaction point localization in an open world.
 
 </div>
