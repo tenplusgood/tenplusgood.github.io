@@ -15,7 +15,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <span class='anchor' id='-xl'></span>
 
 # 🎓 Educations
-- *2023.09 - 至今*, <a href="https://www.hrbeu.edu.cn/"><img class="jpg" src="/images/HEU.jpg" width="23pt"></a> Harbin Engineering University, Computer Science and Technology, Heilongjiang, Harbin, Undergraduate student
+- *2023.09 - 2027.06*, <a href="https://www.hrbeu.edu.cn/"><img class="jpg" src="/images/HEU.jpg" width="23pt"></a> Harbin Engineering University, Computer Science and Technology, Heilongjiang, Harbin, Undergraduate student
   
 <span class='anchor' id='-kycg'></span>
 
