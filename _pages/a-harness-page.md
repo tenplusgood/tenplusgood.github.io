@@ -9,7 +9,7 @@ title: "A-Harness: Verification-Gated Skill Orchestration"
 
 <div class="authors">
   Haojian Huang<sup>1*</sup>, 
-  <a href="https://tenplusgood.github.io/"><strong>Jiahao Shi</strong><sup>1*</sup>, 
+  <a href="https://tenplusgood.github.io/"><strong>Jiahao Shi<a></strong><sup>1*</sup>, 
   Yinchuan Li<sup>2</sup>, 
   Yingcong Chen<sup>1†</sup>
 </div>
