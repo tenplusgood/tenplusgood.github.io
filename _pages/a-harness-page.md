@@ -1,6 +1,6 @@
 ---
 layout: project-page
-permalink: /A-Harness-page/
+permalink: /a-harness-page/
 title: "A-Harness: Verification-Gated Skill Orchestration"
 ---
 
@@ -8,8 +8,8 @@ title: "A-Harness: Verification-Gated Skill Orchestration"
 <h1 class="title is-1">Affordance Agent Harness: Verification-Gated Skill Orchestration</h1>
 
 <div class="authors">
-  Haojian Huang<sup>1*</sup>, 
-  <a href="https://tenplusgood.github.io/"><strong>Jiahao Shi<a></strong><sup>1*</sup>, 
+  <a href="http://www.wonghougin.me/">Haojian Huang</a><sup>1*</sup>, 
+  <a href="https://tenplusgood.github.io/"><strong>Jiahao Shi</strong></a><sup>1*</sup>, 
   Yinchuan Li<sup>2</sup>, 
   Yingcong Chen<sup>1†</sup>
 </div>
