@@ -1,7 +1,7 @@
 ---
 layout: project-page
 permalink: /a-harness-page/
-title: "A-Harness: Verification-Gated Skill Orchestration"
+title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 ---
 
 <!-- 标题与作者 -->
