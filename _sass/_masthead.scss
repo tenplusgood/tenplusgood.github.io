@@ -34,7 +34,6 @@
 }
 
 .masthead__menu {
-
   ul {
     margin: 0;
     padding: 0;
@@ -46,11 +45,10 @@
 .masthead__menu-home-item {
   @include breakpoint($medium) {
     display: block !important;
-      }
-  img, a {
-    vertical-align:middle;
   }
- // display: none !important;
+  img, a {
+    vertical-align: middle;
+  }
 }
 
 .masthead__menu-item {
@@ -63,5 +61,3 @@
     font-weight: 700;
   }
 }
-
-
