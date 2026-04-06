@@ -88,7 +88,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box-text' markdown="1">
   
 - *Robust Multi-View k-Means via Exponential-Saturation Distance and Hierarchical Weight Learning*. **Expert Systems With Applications** (CCF-C, 中科院一区, JCR Q1), 在投.
-  > 该工作提出了一种基于指数饱和距离和分层权重学习的多视图Kmeans聚类框架。
+  > This work proposes a multi-view K-means clustering framework based on Exponential Saturation distance and Hierarchical weight learning.
   
 </div>
 </div>
