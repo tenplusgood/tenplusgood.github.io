@@ -36,7 +36,9 @@
   </head>
 
   <body>
-    {% include masthead.html %}
+    {% unless page.layout == 'project-page' %}
+      {% include masthead.html %}
+    {% endunless %}
     
     <div class="project-wrapper">
       {{ content }}
