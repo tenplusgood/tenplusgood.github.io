@@ -72,44 +72,121 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   <!-- Table 1: ReasonAff & UMD -->
   <div style="display: inline-block; vertical-align: top; margin-right: 2rem; background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
     <h3 style="font-size: 1.1rem; margin-top: 0; text-align: center;">Results on ReasonAff & UMD</h3>
-    <table style="border-collapse: collapse; text-align: center; font-size: 0.85rem;">
+    <table style="border-collapse: collapse; text-align: center; font-size: 0.8rem;">
       <thead>
         <tr style="border-bottom: 2px solid #333;">
-          <th style="padding: 8px; text-align: left;">Model</th>
-          <th style="padding: 8px;">ReasonAff (gIoU)</th>
-          <th style="padding: 8px;">ReasonAff (cIoU)</th>
-          <th style="padding: 8px;">UMD (gIoU)</th>
-          <th style="padding: 8px;">UMD (cIoU)</th>
+          <th style="padding: 6px; text-align: left;">Model</th>
+          <th style="padding: 6px;">ReasonAff (gIoU)</th>
+          <th style="padding: 6px;">ReasonAff (cIoU)</th>
+          <th style="padding: 6px;">UMD (gIoU)</th>
+          <th style="padding: 6px;">UMD (cIoU)</th>
         </tr>
       </thead>
       <tbody>
-        <tr style="border-bottom: 1px solid #eee;">
-          <td style="padding: 8px; text-align: left;">LISA-7B</td>
-          <td style="padding: 8px;">38.17</td>
-          <td style="padding: 8px;">40.58</td>
-          <td style="padding: 8px;">41.90</td>
-          <td style="padding: 8px;">41.23</td>
+        <tr style="border-bottom: 1px solid #eee; color: #888;">
+          <td style="padding: 6px; text-align: left;">VLPart</td>
+          <td style="padding: 6px;">4.21</td>
+          <td style="padding: 6px;">3.88</td>
+          <td style="padding: 6px;">--</td>
+          <td style="padding: 6px;">--</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee; color: #888;">
+          <td style="padding: 6px; text-align: left;">OVSeg</td>
+          <td style="padding: 6px;">16.52</td>
+          <td style="padding: 6px;">10.59</td>
+          <td style="padding: 6px;">--</td>
+          <td style="padding: 6px;">--</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee; color: #888;">
+          <td style="padding: 6px; text-align: left;">SAN</td>
+          <td style="padding: 6px;">10.21</td>
+          <td style="padding: 6px;">13.45</td>
+          <td style="padding: 6px;">--</td>
+          <td style="padding: 6px;">--</td>
         </tr>
         <tr style="border-bottom: 1px solid #eee;">
-          <td style="padding: 8px; text-align: left;">AffordanceLLM</td>
-          <td style="padding: 8px;">48.49</td>
-          <td style="padding: 8px;">38.61</td>
-          <td style="padding: 8px;">43.11</td>
-          <td style="padding: 8px;">38.97</td>
+          <td style="padding: 6px; text-align: left;">LISA-7B</td>
+          <td style="padding: 6px;">38.17</td>
+          <td style="padding: 6px;">40.58</td>
+          <td style="padding: 6px;">41.90</td>
+          <td style="padding: 6px;">41.23</td>
         </tr>
-        <tr style="border-bottom: 1px solid #eee; background-color: #fff9f9;">
-          <td style="padding: 8px; text-align: left;">Affordance-R1</td>
-          <td style="padding: 8px;">67.41</td>
-          <td style="padding: 8px;">62.72</td>
-          <td style="padding: 8px;">49.85</td>
-          <td style="padding: 8px;">42.24</td>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">SAM4MLLM</td>
+          <td style="padding: 6px;">45.51</td>
+          <td style="padding: 6px;">33.64</td>
+          <td style="padding: 6px;">12.40</td>
+          <td style="padding: 6px;">8.41</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">AffordanceLLM</td>
+          <td style="padding: 6px;">48.49</td>
+          <td style="padding: 6px;">38.61</td>
+          <td style="padding: 6px;">43.11</td>
+          <td style="padding: 6px;">38.97</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">InternVL3-8B/7B</td>
+          <td style="padding: 6px;">31.79</td>
+          <td style="padding: 6px;">24.68</td>
+          <td style="padding: 6px;">30.46</td>
+          <td style="padding: 6px;">28.73</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">Qwen2.5VL-7B</td>
+          <td style="padding: 6px;">25.18</td>
+          <td style="padding: 6px;">20.54</td>
+          <td style="padding: 6px;">33.21</td>
+          <td style="padding: 6px;">29.83</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">AffordanceVLM</td>
+          <td style="padding: 6px;">30.50</td>
+          <td style="padding: 6px;">25.54</td>
+          <td style="padding: 6px;">25.41</td>
+          <td style="padding: 6px;">17.96</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">Seg-Zero</td>
+          <td style="padding: 6px;">59.26</td>
+          <td style="padding: 6px;">48.03</td>
+          <td style="padding: 6px;">44.26</td>
+          <td style="padding: 6px;">39.30</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">Vision Reasoner</td>
+          <td style="padding: 6px;">63.04</td>
+          <td style="padding: 6px;">52.70</td>
+          <td style="padding: 6px;">44.00</td>
+          <td style="padding: 6px;">39.71</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">Affordance-R1</td>
+          <td style="padding: 6px;">67.41</td>
+          <td style="padding: 6px;">62.72</td>
+          <td style="padding: 6px;">49.85</td>
+          <td style="padding: 6px;">42.24</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left; font-style: italic;">Full Fixed Skill Chain</td>
+          <td style="padding: 6px;">55.05</td>
+          <td style="padding: 6px;">49.57</td>
+          <td style="padding: 6px;">50.19</td>
+          <td style="padding: 6px;">49.24</td>
         </tr>
         <tr style="background-color: #f0f7ff; font-weight: bold;">
-          <td style="padding: 8px; text-align: left;">A-Harness (Claude-Opus)</td>
-          <td style="padding: 8px;">69.68</td>
-          <td style="padding: 8px;">70.88</td>
-          <td style="padding: 8px;">54.94</td>
-          <td style="padding: 8px;">55.04</td>
+          <td style="padding: 6px; text-align: left;">A-Harness (Claude-Opus)</td>
+          <td style="padding: 6px;">69.68</td>
+          <td style="padding: 6px;">70.88</td>
+          <td style="padding: 6px;">54.94</td>
+          <td style="padding: 6px;">55.04</td>
+        </tr>
+        <tr style="background-color: #f0f7ff; font-weight: bold;">
+          <td style="padding: 6px; text-align: left;">A-Harness (Qwen-3.5)</td>
+          <td style="padding: 6px;">58.51</td>
+          <td style="padding: 6px;">49.47</td>
+          <td style="padding: 6px;">57.61</td>
+          <td style="padding: 6px;">53.39</td>
         </tr>
       </tbody>
     </table>
@@ -118,44 +195,72 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   <!-- Table 2: RAGNet (3DOI & HANDAL) -->
   <div style="display: inline-block; vertical-align: top; background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
     <h3 style="font-size: 1.1rem; margin-top: 0; text-align: center;">Results on RAGNet (3DOI & HANDAL)</h3>
-    <table style="border-collapse: collapse; text-align: center; font-size: 0.85rem;">
+    <table style="border-collapse: collapse; text-align: center; font-size: 0.8rem;">
       <thead>
         <tr style="border-bottom: 2px solid #333;">
-          <th style="padding: 8px; text-align: left;">Method</th>
-          <th style="padding: 8px;">3DOI (gIoU)</th>
-          <th style="padding: 8px;">3DOI (cIoU)</th>
-          <th style="padding: 8px;">HANDAL-E (gIoU)</th>
-          <th style="padding: 8px;">HANDAL-H (gIoU)</th>
+          <th style="padding: 6px; text-align: left;">Method</th>
+          <th style="padding: 6px;">3DOI (gIoU)</th>
+          <th style="padding: 6px;">3DOI (cIoU)</th>
+          <th style="padding: 6px;">HANDAL-E (gIoU)</th>
+          <th style="padding: 6px;">HANDAL-H (gIoU)</th>
         </tr>
       </thead>
       <tbody>
         <tr style="border-bottom: 1px solid #eee;">
-          <td style="padding: 8px; text-align: left;">Vision-Reasoner</td>
-          <td style="padding: 8px;">39.6</td>
-          <td style="padding: 8px;">30.3</td>
-          <td style="padding: 8px;">29.6</td>
-          <td style="padding: 8px;">27.7</td>
+          <td style="padding: 6px; text-align: left;">G-DINO</td>
+          <td style="padding: 6px;">4.1</td>
+          <td style="padding: 6px;">3.9</td>
+          <td style="padding: 6px;">3.6</td>
+          <td style="padding: 6px;">3.4</td>
         </tr>
         <tr style="border-bottom: 1px solid #eee;">
-          <td style="padding: 8px; text-align: left;">Affordance-R1</td>
-          <td style="padding: 8px;">39.0</td>
-          <td style="padding: 8px;">33.4</td>
-          <td style="padding: 8px;">43.1</td>
-          <td style="padding: 8px;">40.7</td>
+          <td style="padding: 6px; text-align: left;">LISA</td>
+          <td style="padding: 6px;">12.3</td>
+          <td style="padding: 6px;">8.1</td>
+          <td style="padding: 6px;">15.5</td>
+          <td style="padding: 6px;">12.3</td>
         </tr>
         <tr style="border-bottom: 1px solid #eee;">
-          <td style="padding: 8px; text-align: left;">AffordanceVLM</td>
-          <td style="padding: 8px;">38.1</td>
-          <td style="padding: 8px;">39.4</td>
-          <td style="padding: 8px;">58.3</td>
-          <td style="padding: 8px;">58.2</td>
+          <td style="padding: 6px; text-align: left;">GLaMM</td>
+          <td style="padding: 6px;">4.4</td>
+          <td style="padding: 6px;">2.9</td>
+          <td style="padding: 6px;">4.7</td>
+          <td style="padding: 6px;">5.0</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">Vision-Reasoner</td>
+          <td style="padding: 6px;">39.6</td>
+          <td style="padding: 6px;">30.3</td>
+          <td style="padding: 6px;">29.6</td>
+          <td style="padding: 6px;">27.7</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">Affordance-R1</td>
+          <td style="padding: 6px;">39.0</td>
+          <td style="padding: 6px;">33.4</td>
+          <td style="padding: 6px;">43.1</td>
+          <td style="padding: 6px;">40.7</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 6px; text-align: left;">AffordanceVLM</td>
+          <td style="padding: 6px;">38.1</td>
+          <td style="padding: 6px;">39.4</td>
+          <td style="padding: 6px;">58.3</td>
+          <td style="padding: 6px;">58.2</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee; background-color: #f9f9f9;">
+          <td style="padding: 6px; text-align: left; font-style: italic;">A-Harness (w/o M-CS)</td>
+          <td style="padding: 6px;">56.5</td>
+          <td style="padding: 6px;">47.2</td>
+          <td style="padding: 6px;">58.4</td>
+          <td style="padding: 6px;">55.3</td>
         </tr>
         <tr style="background-color: #f0f7ff; font-weight: bold;">
-          <td style="padding: 8px; text-align: left;">A-Harness (Full)</td>
-          <td style="padding: 8px;">65.6</td>
-          <td style="padding: 8px;">53.7</td>
-          <td style="padding: 8px;">63.5</td>
-          <td style="padding: 8px;">62.8</td>
+          <td style="padding: 6px; text-align: left;">A-Harness (Full)</td>
+          <td style="padding: 6px;">65.6</td>
+          <td style="padding: 6px;">53.7</td>
+          <td style="padding: 6px;">63.5</td>
+          <td style="padding: 6px;">62.8</td>
         </tr>
       </tbody>
     </table>
