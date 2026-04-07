@@ -67,55 +67,100 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 
 <!-- Results 实验结果 -->
 <h2 class="section-title">Quantitative Results</h2>
-<div style="overflow-x: auto; margin-bottom: 3rem;">
-  <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 0.9rem;">
-    <thead>
-      <tr style="border-bottom: 2px solid #333;">
-        <th style="padding: 10px; text-align: left;">Model</th>
-        <th style="padding: 10px;">ReasonAff (gIoU)</th>
-        <th style="padding: 10px;">ReasonAff (cIoU)</th>
-        <th style="padding: 10px;">UMD (gIoU)</th>
-        <th style="padding: 10px;">UMD (cIoU)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px; text-align: left;">AffordanceLLM</td>
-        <td style="padding: 10px;">48.49</td>
-        <td style="padding: 10px;">38.61</td>
-        <td style="padding: 10px;">43.11</td>
-        <td style="padding: 10px;">38.97</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px; text-align: left;">Affordance-R1</td>
-        <td style="padding: 10px;">67.41</td>
-        <td style="padding: 10px;">62.72</td>
-        <td style="padding: 10px;">49.85</td>
-        <td style="padding: 10px;">42.24</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px; text-align: left;">Fixed Skill Chain (Baseline)</td>
-        <td style="padding: 10px;">55.05</td>
-        <td style="padding: 10px;">49.57</td>
-        <td style="padding: 10px;">50.19</td>
-        <td style="padding: 10px;">49.24</td>
-      </tr>
-      <tr style="background-color: #f9f9f9; font-weight: bold;">
-        <td style="padding: 10px; text-align: left;">A-Harness (Claude-Opus)</td>
-        <td style="padding: 10px;"><strong>69.68</strong></td>
-        <td style="padding: 10px;"><strong>70.88</strong></td>
-        <td style="padding: 10px;">54.94</td>
-        <td style="padding: 10px;">55.04</td>
-      </tr>
-      <tr style="background-color: #f9f9f9; font-weight: bold;">
-        <td style="padding: 10px; text-align: left;">A-Harness (Qwen-3.5)</td>
-        <td style="padding: 10px;">58.51</td>
-        <td style="padding: 10px;">49.47</td>
-        <td style="padding: 10px;"><strong>57.61</strong></td>
-        <td style="padding: 10px;"><strong>53.39</strong></td>
-      </tr>
-    </tbody>
-  </table>
+<div style="overflow-x: auto; white-space: nowrap; padding-bottom: 1rem; margin-bottom: 3rem;">
+  
+  <!-- Table 1: ReasonAff & UMD -->
+  <div style="display: inline-block; vertical-align: top; margin-right: 2rem; background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    <h3 style="font-size: 1.1rem; margin-top: 0; text-align: center;">Results on ReasonAff & UMD</h3>
+    <table style="border-collapse: collapse; text-align: center; font-size: 0.85rem;">
+      <thead>
+        <tr style="border-bottom: 2px solid #333;">
+          <th style="padding: 8px; text-align: left;">Model</th>
+          <th style="padding: 8px;">ReasonAff (gIoU)</th>
+          <th style="padding: 8px;">ReasonAff (cIoU)</th>
+          <th style="padding: 8px;">UMD (gIoU)</th>
+          <th style="padding: 8px;">UMD (cIoU)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 8px; text-align: left;">LISA-7B</td>
+          <td style="padding: 8px;">38.17</td>
+          <td style="padding: 8px;">40.58</td>
+          <td style="padding: 8px;">41.90</td>
+          <td style="padding: 8px;">41.23</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 8px; text-align: left;">AffordanceLLM</td>
+          <td style="padding: 8px;">48.49</td>
+          <td style="padding: 8px;">38.61</td>
+          <td style="padding: 8px;">43.11</td>
+          <td style="padding: 8px;">38.97</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee; background-color: #fff9f9;">
+          <td style="padding: 8px; text-align: left;">Affordance-R1</td>
+          <td style="padding: 8px;">67.41</td>
+          <td style="padding: 8px;">62.72</td>
+          <td style="padding: 8px;">49.85</td>
+          <td style="padding: 8px;">42.24</td>
+        </tr>
+        <tr style="background-color: #f0f7ff; font-weight: bold;">
+          <td style="padding: 8px; text-align: left;">A-Harness (Claude-Opus)</td>
+          <td style="padding: 8px;">69.68</td>
+          <td style="padding: 8px;">70.88</td>
+          <td style="padding: 8px;">54.94</td>
+          <td style="padding: 8px;">55.04</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Table 2: RAGNet (3DOI & HANDAL) -->
+  <div style="display: inline-block; vertical-align: top; background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+    <h3 style="font-size: 1.1rem; margin-top: 0; text-align: center;">Results on RAGNet (3DOI & HANDAL)</h3>
+    <table style="border-collapse: collapse; text-align: center; font-size: 0.85rem;">
+      <thead>
+        <tr style="border-bottom: 2px solid #333;">
+          <th style="padding: 8px; text-align: left;">Method</th>
+          <th style="padding: 8px;">3DOI (gIoU)</th>
+          <th style="padding: 8px;">3DOI (cIoU)</th>
+          <th style="padding: 8px;">HANDAL-E (gIoU)</th>
+          <th style="padding: 8px;">HANDAL-H (gIoU)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 8px; text-align: left;">Vision-Reasoner</td>
+          <td style="padding: 8px;">39.6</td>
+          <td style="padding: 8px;">30.3</td>
+          <td style="padding: 8px;">29.6</td>
+          <td style="padding: 8px;">27.7</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 8px; text-align: left;">Affordance-R1</td>
+          <td style="padding: 8px;">39.0</td>
+          <td style="padding: 8px;">33.4</td>
+          <td style="padding: 8px;">43.1</td>
+          <td style="padding: 8px;">40.7</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 8px; text-align: left;">AffordanceVLM</td>
+          <td style="padding: 8px;">38.1</td>
+          <td style="padding: 8px;">39.4</td>
+          <td style="padding: 8px;">58.3</td>
+          <td style="padding: 8px;">58.2</td>
+        </tr>
+        <tr style="background-color: #f0f7ff; font-weight: bold;">
+          <td style="padding: 8px; text-align: left;">A-Harness (Full)</td>
+          <td style="padding: 8px;">65.6</td>
+          <td style="padding: 8px;">53.7</td>
+          <td style="padding: 8px;">63.5</td>
+          <td style="padding: 8px;">62.8</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </div>
 
 <!-- BibTeX 引用 -->
