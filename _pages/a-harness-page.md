@@ -37,14 +37,17 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 <div class="abstract-box">
   <h2>Abstract</h2>
   <p>
-    Affordance grounding requires identifying <em>where</em> and <em>how</em> an agent should interact in open-world scenes. Recent systems combine multiple skills (e.g., detection, segmentation), yet most orchestrate them with fixed pipelines that fail to recover from intermediate errors. We propose <strong>Affordance Agent Harness</strong>, a closed-loop runtime that unifies heterogeneous skills with an evidence store and cost control. Crucially, an affordance-specific <strong>Verifier</strong> gates commitments using self-consistency, cross-scale stability, and evidence sufficiency, triggering targeted retries when needed. Experiments demonstrate a superior accuracy-cost Pareto frontier over fixed-pipeline baselines, improving grounding quality while reducing average skill calls.
+    Affordance grounding requires identifying <em>where</em> and <em>how</em> an agent should interact in open-world scenes, where actionable regions are often small, occluded, reflective, and visually ambiguous. Recent systems therefore combine multiple skills (e.g., detection, segmentation, interaction-imagination), yet most orchestrate them with fixed pipelines that are poorly matched to per-instance difficulty, offer limited targeted recovery from intermediate errors, and fail to amortize experience over recurring objects. We observe that many failures stem not from the lack of stronger models but from the lack of a system-level ability to actively acquire and <strong>validate</strong> evidence under bounded inference cost, where "verification" must rely on relative signals rather than ground-truth labels at test time. To this end, we propose <strong>Affordance Agent Harness</strong>, a closed-loop runtime that unifies heterogeneous skills with an evidence store and cost control, retrieves episodic memories to provide priors for recurring categories, and employs a Router to adaptively select and parameterize skills. Crucially, an affordance-specific Verifier <strong>gates commitments</strong> using self-consistency, cross-scale stability, and evidence sufficiency, triggering targeted retries when needed before a final judge fuses accumulated evidence and trajectories into the prediction. Experiments on multiple affordance benchmarks and difficulty-controlled subsets demonstrate a superior accuracy–cost Pareto frontier over fixed-pipeline baselines, improving grounding quality while reducing average skill calls and latency.
   </p>
 </div>
 
 <!-- Motivation 核心动力 -->
 <h2 class="section-title">Motivation</h2>
 <p style="line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
-  Many affordance grounding failures stem not from the lack of stronger models, but from the lack of a system-level ability to <strong>actively acquire and validate evidence</strong> under bounded cost. Without test-time labels, we operationalize relative diagnostics: (1) <strong>Cross-tool consistency</strong>, (2) <strong>Cross-scale stability</strong>, and (3) <strong>Evidence sufficiency</strong>. This reframes grounding as a budgeted, evidence-seeking decision process.
+  Affordance grounding remains brittle when decisions must be geometry-aware and evidence must be aggregated coherently across heterogeneous cues and tools. Existing agent systems exhibit three limitations: (1) <strong>Fixed Execution</strong>: they execute skills in a predetermined order regardless of input complexity; (2) <strong>Lack of Closed-loop Correction</strong>: they lack a mechanism to diagnose failure sources and re-invoke responsible skills when intermediate outputs conflict; (3) <strong>No Persistent Experience</strong>: recurring objects are re-solved from scratch each time. 
+</p>
+<p style="line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
+  We reframes affordance grounding as a budgeted, evidence-seeking decision process, where tool usage is a per-instance policy rather than a static script. We rely on three families of relative signals: (i) <strong>cross-tool consistency</strong>, (ii) <strong>cross-scale stability</strong>, and (iii) <strong>evidence sufficiency</strong>.
 </p>
 
 <!-- Methodology 核心方法 -->
@@ -52,9 +55,15 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 <div style="text-align: center; margin-bottom: 2rem;">
   <img src="{{ '/images/flowchat_new.png' | relative_url }}" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 </div>
-<p style="line-height: 1.8; margin-bottom: 3rem; text-align: justify;">
-  A-Harness consists of four key components: (i) an <strong>Evidence Store</strong> that accumulates heterogeneous skill outputs with provenance, (ii) a <strong>Two-Tier Memory</strong> (Common-sense Bank and Test-time Episodic Bank) for reusable priors, (iii) a <strong>Router</strong> for budget-aware skill selection, and (iv) a <strong>Verifier</strong> for gating commitment and triggering targeted retries.
+<p style="line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
+  A-Harness consists of four key components:
 </p>
+<ul style="line-height: 1.8; margin-bottom: 3rem; text-align: justify;">
+  <li><strong>Evidence Store with Provenance</strong>: Accumulates heterogeneous skill outputs (boxes, masks, text) tagged with their source and zoom level to enable cross-skill agreement checks.</li>
+  <li><strong>Two-Tier Memory</strong>: A <em>Common-sense Bank</em> for stable priors of frequent objects and a <em>Test-time Episodic Bank</em> that accumulates verifier-accepted successful trajectories for online adaptation.</li>
+  <li><strong>Budget-Aware Router</strong>: Selects the next skill and its parameters by choosing the action most likely to resolve current uncertainty per unit cost (benefit-cost ratio).</li>
+  <li><strong>Verifier</strong>: Sidesteps the absence of ground truth by using relative diagnostics (consistency, stability, sufficiency) to gate commitments and trigger <strong>targeted retries</strong>.</li>
+</ul>
 
 <!-- Results 实验结果 -->
 <h2 class="section-title">Quantitative Results</h2>
@@ -62,7 +71,7 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 0.9rem;">
     <thead>
       <tr style="border-bottom: 2px solid #333;">
-        <th style="padding: 10px;">Model</th>
+        <th style="padding: 10px; text-align: left;">Model</th>
         <th style="padding: 10px;">ReasonAff (gIoU)</th>
         <th style="padding: 10px;">ReasonAff (cIoU)</th>
         <th style="padding: 10px;">UMD (gIoU)</th>
@@ -84,12 +93,26 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
         <td style="padding: 10px;">49.85</td>
         <td style="padding: 10px;">42.24</td>
       </tr>
+      <tr style="border-bottom: 1px solid #eee;">
+        <td style="padding: 10px; text-align: left;">Fixed Skill Chain (Baseline)</td>
+        <td style="padding: 10px;">55.05</td>
+        <td style="padding: 10px;">49.57</td>
+        <td style="padding: 10px;">50.19</td>
+        <td style="padding: 10px;">49.24</td>
+      </tr>
       <tr style="background-color: #f9f9f9; font-weight: bold;">
         <td style="padding: 10px; text-align: left;">A-Harness (Claude-Opus)</td>
-        <td style="padding: 10px;">69.68</td>
-        <td style="padding: 10px;">70.88</td>
+        <td style="padding: 10px;"><strong>69.68</strong></td>
+        <td style="padding: 10px;"><strong>70.88</strong></td>
         <td style="padding: 10px;">54.94</td>
         <td style="padding: 10px;">55.04</td>
+      </tr>
+      <tr style="background-color: #f9f9f9; font-weight: bold;">
+        <td style="padding: 10px; text-align: left;">A-Harness (Qwen-3.5)</td>
+        <td style="padding: 10px;">58.51</td>
+        <td style="padding: 10px;">49.47</td>
+        <td style="padding: 10px;"><strong>57.61</strong></td>
+        <td style="padding: 10px;"><strong>53.39</strong></td>
       </tr>
     </tbody>
   </table>
