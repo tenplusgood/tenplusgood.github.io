@@ -132,6 +132,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 - *2025-09* 2025年春季学期校优秀学生一等奖学金（1k，5%）
 - *2025-10* 哈尔滨工程大学创新标兵候选人提名（全校38人，2022-2024本硕博）
 - *2025-11* 黑龙江省三好学生
+- *2026-03* 2025年秋季学期校优秀学生一等奖学金 (1k, 5%)
 - *2026-05* 2025-2026年度哈尔滨工程大学“五四”评比学生创新创业标兵
 
 <span class='anchor' id='-kyjn'></span>
