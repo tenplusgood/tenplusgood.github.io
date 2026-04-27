@@ -45,6 +45,11 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 
 <!-- Method Overview 方法概览 -->
 <h2 class="section-title">Method Overview</h2>
+
+<p class="text-content" style="margin-bottom: 20px;">
+  We propose <strong>Affordance Agent Harness (A-Harness)</strong>, a closed-loop execution framework that unifies heterogeneous skills under a budgeted, evidence-seeking decision process. Given an input, the system retrieves <em>episodic memories</em> to provide actionable priors for recurring objects. A <em>Router</em> adaptively selects the next skill and parameters based on the current evidence state and remaining budget. Crucially, an affordance-specific <em>Verifier</em> applies relative diagnostics (consistency, stability, sufficiency) to detect conflicts and trigger targeted retries. Once confidence criteria are met, a final policy fuses the accumulated evidence into the affordance prediction, and successful episodes are summarized back into memory to improve future routing.
+</p>
+
 <img src="{{ '/images/comp.png' | relative_url }}" class="teaser-img" alt="Method Overview">
 <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px;">
   <strong>Comparison between a prior affordance agent with a fixed reasoning graph and our A-Harness–enabled agent.</strong> While prior systems execute skills along a predefined script with late fusion and no commitment gating, A-Harness introduces a context-aware, budgeted closed-loop runtime with adaptive routing, verification-driven retries, and persistent memory for reusable experience.
