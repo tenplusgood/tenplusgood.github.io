@@ -8,58 +8,24 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 <div class="hero-section" style="text-align: center;">
   <h1 class="title is-1">Affordance Agent Harness: Verification-Gated Skill Orchestration</h1>
 
-  <!-- 作者名单 -->
-  <div class="authors-container">
-    <a href="https://jethrojames.github.io/" class="author-btn">
-      <span class="author-name">Haojian Huang<sup class="author-sup">1,2*</sup></span>
-    </a>
-    <a href="https://tenplusgood.github.io/" class="author-btn">
-      <span class="author-name">Jiahao Shi<sup class="author-sup">2,3*</sup></span>
-    </a>
-    <a href="https://yinchuanll.github.io/" class="author-btn">
-      <span class="author-name">Yinchuan Li<sup class="author-sup">1,2</sup></span>
-    </a>
-    <a href="https://www.yingcong.me/" class="author-btn">
-      <span class="author-name">Yingcong Chen<sup class="author-sup">1,2†</sup></span>
-    </a>
+  <div class="authors">
+    <a href="http://www.wonghougin.me/">Haojian Huang</a><sup>1,2*</sup>, 
+    <a href="https://tenplusgood.github.io/">Jiahao Shi</a><sup>2,3*</sup>, 
+    <a href="https://yinchuanll.github.io/">Yinchuan Li</a><sup>1,2</sup>, 
+    <a href="https://www.yingcong.me/">Yingcong Chen</a><sup>1,2†</sup>
   </div>
 
-  <!-- 地址名单 -->
-  <div class="affiliations-container">
-    <span class="affil-btn">
-      <span class="affil-name"><sup class="author-sup">1</sup>HKUST(GZ)</span>
-    </span>
-    <span class="affil-btn">
-      <span class="affil-name"><sup class="author-sup">2</sup>Knowin</span>
-    </span>
-    <span class="affil-btn">
-      <span class="affil-name"><sup class="author-sup">3</sup>Harbin Engineering University</span>
-    </span>
+  <div class="affiliations">
+    <sup>1</sup>HKUST(GZ), <sup>2</sup>Knowin, <sup>3</sup>Harbin Engineering University<br>
+    <sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author
   </div>
 
-  <!-- 共一和通讯提示内容 -->
-  <div class="con-cor">
-    *: Equal Contribution. †: Corresponding Author.
-  </div>
-
-  <!-- 提供引导按钮 -->
-  <div class="guidance-container">
-    <a href="https://arxiv.org/abs/2511.21021" class="guidance-btn">
-      <i class="fas fa-file-pdf"></i>
-      <span class="guidance-btn-text">Paper</span>
-    </a>
-    <a href="#" class="guidance-btn">
-      <i class="fab fa-github"></i>
-      <span class="guidance-btn-text">Code</span>
-    </a>
-    <a href="#" class="guidance-btn">
-      <i class="fas fa-video"></i>
-      <span class="guidance-btn-text">Video</span>
-    </a>
-    <a href="#" class="guidance-btn">
-      <i class="fas fa-database"></i>
-      <span class="guidance-btn-text">Dataset</span>
-    </a>
+  <!-- 链接按钮组 -->
+  <div class="link-buttons">
+    <a href="https://arxiv.org/abs/2511.21021" class="btn"><i class="fas fa-file-pdf"></i> Paper (arXiv)</a>
+    <a href="#" class="btn"><i class="fab fa-github"></i> Code (Coming Soon)</a>
+    <a href="#" class="btn"><i class="fas fa-video"></i> Video</a>
+    <a href="#" class="btn"><i class="fas fa-database"></i> Dataset</a>
   </div>
 </div>
 
