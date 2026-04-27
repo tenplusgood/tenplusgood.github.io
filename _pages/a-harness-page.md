@@ -23,9 +23,7 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   <!-- 链接按钮组 -->
   <div class="link-buttons">
     <a href="https://arxiv.org/abs/2511.21021" class="btn"><i class="fas fa-file-pdf"></i> Paper (arXiv)</a>
-    <a href="#" class="btn"><i class="fab fa-github"></i> Code (Coming Soon)</a>
-    <a href="#" class="btn"><i class="fas fa-video"></i> Video</a>
-    <a href="#" class="btn"><i class="fas fa-database"></i> Dataset</a>
+    <a href="#" class="btn"><i class="fab fa-github"></i> Code </a>
   </div>
 </div>
 
