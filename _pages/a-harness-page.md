@@ -35,35 +35,43 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 
 <!-- Abstract 摘要卡片 -->
 <div class="abstract-box">
-  <h2>Abstract</h2>
-  <p>
+  <h2 class="section-title" style="margin-top: 0;">Abstract</h2>
+  <p class="text-content">
     Affordance grounding requires identifying <em>where</em> and <em>how</em> an agent should interact in open-world scenes, where actionable regions are often small, occluded, reflective, and visually ambiguous. Recent systems therefore combine multiple skills (e.g., detection, segmentation, interaction-imagination), yet most orchestrate them with fixed pipelines that are poorly matched to per-instance difficulty, offer limited targeted recovery from intermediate errors, and fail to amortize experience over recurring objects. We observe that many failures stem not from the lack of stronger models but from the lack of a system-level ability to actively acquire and <strong>validate</strong> evidence under bounded inference cost, where "verification" must rely on relative signals rather than ground-truth labels at test time. To this end, we propose <strong>Affordance Agent Harness</strong>, a closed-loop runtime that unifies heterogeneous skills with an evidence store and cost control, retrieves episodic memories to provide priors for recurring categories, and employs a Router to adaptively select and parameterize skills. Crucially, an affordance-specific Verifier <strong>gates commitments</strong> using self-consistency, cross-scale stability, and evidence sufficiency, triggering targeted retries when needed before a final judge fuses accumulated evidence and trajectories into the prediction. Experiments on multiple affordance benchmarks and difficulty-controlled subsets demonstrate a superior accuracy–cost Pareto frontier over fixed-pipeline baselines, improving grounding quality while reducing average skill calls and latency.
   </p>
 </div>
 
-<!-- Motivation 核心动力 -->
-<h2 class="section-title">Motivation</h2>
-<p style="line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
-  Affordance grounding remains brittle when decisions must be geometry-aware and evidence must be aggregated coherently across heterogeneous cues and tools. Existing agent systems exhibit three limitations: (1) <strong>Fixed Execution</strong>: they execute skills in a predetermined order regardless of input complexity; (2) <strong>Lack of Closed-loop Correction</strong>: they lack a mechanism to diagnose failure sources and re-invoke responsible skills when intermediate outputs conflict; (3) <strong>No Persistent Experience</strong>: recurring objects are re-solved from scratch each time. 
-</p>
-<p style="line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
-  We reframes affordance grounding as a budgeted, evidence-seeking decision process, where tool usage is a per-instance policy rather than a static script. We rely on three families of relative signals: (i) <strong>cross-tool consistency</strong>, (ii) <strong>cross-scale stability</strong>, and (iii) <strong>evidence sufficiency</strong>.
+<hr class="divider">
+
+<!-- Method Overview 方法概览 -->
+<h2 class="section-title">Method Overview</h2>
+<img src="{{ '/images/comp.png' | relative_url }}" class="teaser-img" alt="Method Overview">
+<p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px;">
+  <strong>Comparison between a prior affordance agent with a fixed reasoning graph and our A-Harness–enabled agent.</strong> While prior systems execute skills along a predefined script with late fusion and no commitment gating, A-Harness introduces a context-aware, budgeted closed-loop runtime with adaptive routing, verification-driven retries, and persistent memory for reusable experience.
 </p>
 
-<!-- Methodology 核心方法 -->
-<h2 class="section-title">Methodology</h2>
-<img src="{{ '/images/skills.png' | relative_url }}" class="teaser-img" alt="Methodology" onerror="this.onerror=null; this.src='{{ '/images/comp.png' | relative_url }}';">
-<p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">
-  If the image is not displaying, you can <a href="{{ '/images/skills.png' | relative_url }}" target="_blank" style="color: #3273dc;">click here to view it</a>.
+<hr class="divider">
+
+<!-- Method details 方法细节 -->
+<h2 class="section-title">Method Details</h2>
+<img src="{{ '/images/method.png' | relative_url }}" class="teaser-img" alt="Method Details" style="margin-bottom: 15px;">
+<p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px; margin-bottom: 40px;">
+  <strong>Overview of the A-Harness framework, illustrating iterative decision-making.</strong> The Verifier dynamically assesses evidence, guiding the Router to either re-plan or output results, while storing the trajectory in memory. The skill outcome $o_t$ is stored in the evidence store and combined with existing evidence to support the next step.
 </p>
-<p style="line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
+
+<img src="{{ '/images/skills.png' | relative_url }}" class="teaser-img" alt="Skills Illustration" onerror="this.onerror=null; this.src='{{ '/images/comp.png' | relative_url }}';">
+<p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px;">
+  <strong>Illustration of heterogeneous skills that generate complementary visual and semantic evidence.</strong> Web search can retrieve both textual guidance and paired images when available (i.e. case(2)), enriching the visual context for affordance reasoning.
+</p>
+
+<p class="text-content" style="margin-top: 20px;">
   A-Harness consists of four key components:
 </p>
-<ul style="line-height: 1.8; margin-bottom: 3rem; text-align: justify;">
-  <li><strong>Evidence Store with Provenance</strong>: Accumulates heterogeneous skill outputs (boxes, masks, text) tagged with their source and zoom level to enable cross-skill agreement checks.</li>
-  <li><strong>Two-Tier Memory</strong>: A <em>Common-sense Bank</em> for stable priors of frequent objects and a <em>Test-time Episodic Bank</em> that accumulates verifier-accepted successful trajectories for online adaptation.</li>
-  <li><strong>Budget-Aware Router</strong>: Selects the next skill and its parameters by choosing the action most likely to resolve current uncertainty per unit cost (benefit-cost ratio).</li>
-  <li><strong>Verifier</strong>: Sidesteps the absence of ground truth by using relative diagnostics (consistency, stability, sufficiency) to gate commitments and trigger <strong>targeted retries</strong>.</li>
+<ul class="text-content" style="padding-left: 20px;">
+  <li style="margin-bottom: 10px;"><strong>Evidence Store with Provenance</strong>: Accumulates heterogeneous skill outputs (boxes, masks, text) tagged with their source and zoom level to enable cross-skill agreement checks.</li>
+  <li style="margin-bottom: 10px;"><strong>Two-Tier Memory</strong>: A <em>Common-sense Bank</em> for stable priors of frequent objects and a <em>Test-time Episodic Bank</em> that accumulates verifier-accepted successful trajectories for online adaptation.</li>
+  <li style="margin-bottom: 10px;"><strong>Budget-Aware Router</strong>: Selects the next skill and its parameters by choosing the action most likely to resolve current uncertainty per unit cost (benefit-cost ratio).</li>
+  <li style="margin-bottom: 10px;"><strong>Verifier</strong>: Sidesteps the absence of ground truth by using relative diagnostics (consistency, stability, sufficiency) to gate commitments and trigger <strong>targeted retries</strong>.</li>
 </ul>
 
   <!-- Results 实验结果 -->
