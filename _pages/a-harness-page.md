@@ -54,6 +54,33 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 
 <!-- Method details 方法细节 -->
 <h2 class="section-title" style="text-align: center; font-weight: bold; font-size: 28px;">Method Details</h2>
+
+<p class="text-content" style="margin-top: 20px; font-size: 18px;">
+  A-Harness consists of four key components:
+</p>
+
+<div class="text-content" style="padding-left: 10px;">
+  <div style="margin-bottom: 20px;">
+    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 8px; color: #333;">1. Evidence Store with Provenance</h3>
+    <p style="margin: 0; line-height: 1.8;">Accumulates heterogeneous skill outputs (boxes, masks, text) tagged with their source and zoom level to enable cross-skill agreement checks.</p>
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 8px; color: #333;">2. Two-Tier Memory</h3>
+    <p style="margin: 0; line-height: 1.8;">A <em>Common-sense Bank</em> for stable priors of frequent objects and a <em>Test-time Episodic Bank</em> that accumulates verifier-accepted successful trajectories for online adaptation.</p>
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 8px; color: #333;">3. Budget-Aware Router</h3>
+    <p style="margin: 0; line-height: 1.8;">Selects the next skill and its parameters by choosing the action most likely to resolve current uncertainty per unit cost (benefit-cost ratio).</p>
+  </div>
+
+  <div style="margin-bottom: 30px;">
+    <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 8px; color: #333;">4. Verifier</h3>
+    <p style="margin: 0; line-height: 1.8;">Sidesteps the absence of ground truth by using relative diagnostics (consistency, stability, sufficiency) to gate commitments and trigger <strong>targeted retries</strong>.</p>
+  </div>
+</div>
+
 <div style="text-align: center; margin-bottom: 15px;">
   <img src="{{ '/images/method.png' | relative_url }}" class="teaser-img" alt="Method Details" style="max-width: 45%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
 </div>
@@ -67,16 +94,6 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px;">
   <strong>Illustration of heterogeneous skills that generate complementary visual and semantic evidence.</strong> Web search can retrieve both textual guidance and paired images when available (i.e. case(2)), enriching the visual context for affordance reasoning.
 </p>
-
-<p class="text-content" style="margin-top: 20px;">
-  A-Harness consists of four key components:
-</p>
-<ul class="text-content" style="padding-left: 20px;">
-  <li style="margin-bottom: 10px;"><strong>Evidence Store with Provenance</strong>: Accumulates heterogeneous skill outputs (boxes, masks, text) tagged with their source and zoom level to enable cross-skill agreement checks.</li>
-  <li style="margin-bottom: 10px;"><strong>Two-Tier Memory</strong>: A <em>Common-sense Bank</em> for stable priors of frequent objects and a <em>Test-time Episodic Bank</em> that accumulates verifier-accepted successful trajectories for online adaptation.</li>
-  <li style="margin-bottom: 10px;"><strong>Budget-Aware Router</strong>: Selects the next skill and its parameters by choosing the action most likely to resolve current uncertainty per unit cost (benefit-cost ratio).</li>
-  <li style="margin-bottom: 10px;"><strong>Verifier</strong>: Sidesteps the absence of ground truth by using relative diagnostics (consistency, stability, sufficiency) to gate commitments and trigger <strong>targeted retries</strong>.</li>
-</ul>
 
 <!-- Results 实验结果 -->
 <h2 class="section-title" style="text-align: center; font-weight: bold; font-size: 28px;">Quantitative Results</h2>
