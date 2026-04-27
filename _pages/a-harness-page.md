@@ -89,7 +89,7 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 </p>
 
 <div style="text-align: center; margin-bottom: 15px;">
-  <img src="{{ '/images/skills.png' | relative_url }}" class="teaser-img" alt="Skills Illustration" onerror="this.onerror=null; this.src='{{ '/images/comp.png' | relative_url }}';" style="max-width: 60%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
+  <img src="{{ '/images/skills.png' | relative_url }}" class="teaser-img" alt="Skills Illustration" onerror="this.onerror=null; this.src='{{ '/images/comp.png' | relative_url }}';" style="max-width: 75%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
 </div>
 <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px;">
   <strong>Illustration of heterogeneous skills that generate complementary visual and semantic evidence.</strong> Web search can retrieve both textual guidance and paired images when available (i.e. case(2)), enriching the visual context for affordance reasoning.
