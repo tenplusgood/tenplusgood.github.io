@@ -50,7 +50,9 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   We propose <strong>Affordance Agent Harness (A-Harness)</strong>, a closed-loop execution framework that unifies heterogeneous skills under a budgeted, evidence-seeking decision process. Given an input, the system retrieves <em>episodic memories</em> to provide actionable priors for recurring objects. A <em>Router</em> adaptively selects the next skill and parameters based on the current evidence state and remaining budget. Crucially, an affordance-specific <em>Verifier</em> applies relative diagnostics (consistency, stability, sufficiency) to detect conflicts and trigger targeted retries. Once confidence criteria are met, a final policy fuses the accumulated evidence into the affordance prediction, and successful episodes are summarized back into memory to improve future routing.
 </p>
 
-<img src="{{ '/images/comp.png' | relative_url }}" class="teaser-img" alt="Method Overview">
+<div style="text-align: center; margin-bottom: 15px;">
+  <img src="{{ '/images/comp.png' | relative_url }}" class="teaser-img" alt="Method Overview" style="max-width: 60%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
+</div>
 <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px;">
   <strong>Comparison between a prior affordance agent with a fixed reasoning graph and our A-Harness–enabled agent.</strong> While prior systems execute skills along a predefined script with late fusion and no commitment gating, A-Harness introduces a context-aware, budgeted closed-loop runtime with adaptive routing, verification-driven retries, and persistent memory for reusable experience.
 </p>
@@ -66,7 +68,9 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   <strong>Overview of the A-Harness framework, illustrating iterative decision-making.</strong> The Verifier dynamically assesses evidence, guiding the Router to either re-plan or output results, while storing the trajectory in memory. The skill outcome $o_t$ is stored in the evidence store and combined with existing evidence to support the next step.
 </p>
 
-<img src="{{ '/images/skills.png' | relative_url }}" class="teaser-img" alt="Skills Illustration" onerror="this.onerror=null; this.src='{{ '/images/comp.png' | relative_url }}';">
+<div style="text-align: center; margin-bottom: 15px;">
+  <img src="{{ '/images/skills.png' | relative_url }}" class="teaser-img" alt="Skills Illustration" onerror="this.onerror=null; this.src='{{ '/images/comp.png' | relative_url }}';" style="max-width: 60%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
+</div>
 <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px;">
   <strong>Illustration of heterogeneous skills that generate complementary visual and semantic evidence.</strong> Web search can retrieve both textual guidance and paired images when available (i.e. case(2)), enriching the visual context for affordance reasoning.
 </p>
