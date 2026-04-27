@@ -16,10 +16,10 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
     <a href="https://tenplusgood.github.io/" class="author-btn">
       <span class="author-name">Jiahao Shi<sup class="author-sup">2,3*</sup></span>
     </a>
-    <a href="#" class="author-btn">
+    <a href="https://yinchuanll.github.io/" class="author-btn">
       <span class="author-name">Yinchuan Li<sup class="author-sup">1,2</sup></span>
     </a>
-    <a href="#" class="author-btn">
+    <a href="https://www.yingcong.me/" class="author-btn">
       <span class="author-name">Yingcong Chen<sup class="author-sup">1,2†</sup></span>
     </a>
   </div>
