@@ -52,12 +52,10 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 
 <!-- Methodology 核心方法 -->
 <h2 class="section-title">Methodology</h2>
-<div style="text-align: center; margin-bottom: 2rem;">
-  <embed src="{{ '/images/skills.pdf' | relative_url }}" type="application/pdf" width="100%" height="600px" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-  <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
-    If the PDF is not displaying, you can <a href="{{ '/images/skills.pdf' | relative_url }}" target="_blank">click here to view it in a new tab</a>.
-  </p>
-</div>
+<img src="{{ '/images/skills.png' | relative_url }}" class="teaser-img" alt="Methodology" onerror="this.onerror=null; this.src='{{ '/images/comp.png' | relative_url }}';">
+<p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">
+  If the image is not displaying, you can <a href="{{ '/images/skills.png' | relative_url }}" target="_blank" style="color: #3273dc;">click here to view it</a>.
+</p>
 <p style="line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
   A-Harness consists of four key components:
 </p>
