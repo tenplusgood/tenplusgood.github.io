@@ -5,24 +5,21 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 ---
 
 <!-- 标题与作者 -->
-<div class="hero-section">
+<div class="hero-section" style="text-align: center;">
   <h1 class="title is-1">Affordance Agent Harness: Verification-Gated Skill Orchestration</h1>
 
+  <!-- 作者名单 -->
   <div class="authors-container">
     <a href="https://jethrojames.github.io/" class="author-btn">
-      <img src="https://ui-avatars.com/api/?name=Haojian+Huang&background=random" class="author-avatar" alt="Haojian Huang">
       <span class="author-name">Haojian Huang<sup class="author-sup">1,2*</sup></span>
     </a>
     <a href="https://tenplusgood.github.io/" class="author-btn">
-      <img src="https://ui-avatars.com/api/?name=Jiahao+Shi&background=random" class="author-avatar" alt="Jiahao Shi">
       <span class="author-name">Jiahao Shi<sup class="author-sup">2,3*</sup></span>
     </a>
     <a href="#" class="author-btn">
-      <img src="https://ui-avatars.com/api/?name=Yinchuan+Li&background=random" class="author-avatar" alt="Yinchuan Li">
       <span class="author-name">Yinchuan Li<sup class="author-sup">1,2</sup></span>
     </a>
     <a href="#" class="author-btn">
-      <img src="https://ui-avatars.com/api/?name=Yingcong+Chen&background=random" class="author-avatar" alt="Yingcong Chen">
       <span class="author-name">Yingcong Chen<sup class="author-sup">1,2†</sup></span>
     </a>
   </div>
@@ -68,9 +65,9 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 
 <div class="content-section">
   <!-- Abstract 摘要卡片 -->
-  <div class="abstract-box">
+  <div class="abstract-box" style="text-align: center;">
     <h2 class="section-title" style="margin-top: 0; border-bottom: none;">Abstract</h2>
-    <p class="text-content">
+    <p class="text-content" style="text-align: justify; display: inline-block;">
       Affordance grounding requires identifying <em>where</em> and <em>how</em> an agent should interact in open-world scenes, where actionable regions are often small, occluded, reflective, and visually ambiguous. Recent systems therefore combine multiple skills (e.g., detection, segmentation, interaction-imagination), yet most orchestrate them with fixed pipelines that are poorly matched to per-instance difficulty, offer limited targeted recovery from intermediate errors, and fail to amortize experience over recurring objects. We observe that many failures stem not from the lack of stronger models but from the lack of a system-level ability to actively acquire and <strong>validate</strong> evidence under bounded inference cost, where "verification" must rely on relative signals rather than ground-truth labels at test time. To this end, we propose <strong>Affordance Agent Harness</strong>, a closed-loop runtime that unifies heterogeneous skills with an evidence store and cost control, retrieves episodic memories to provide priors for recurring categories, and employs a Router to adaptively select and parameterize skills. Crucially, an affordance-specific Verifier <strong>gates commitments</strong> using self-consistency, cross-scale stability, and evidence sufficiency, triggering targeted retries when needed before a final judge fuses accumulated evidence and trajectories into the prediction. Experiments on multiple affordance benchmarks and difficulty-controlled subsets demonstrate a superior accuracy–cost Pareto frontier over fixed-pipeline baselines, improving grounding quality while reducing average skill calls and latency.
     </p>
   </div>
