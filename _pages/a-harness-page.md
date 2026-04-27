@@ -27,11 +27,6 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   <a href="#" class="btn"><i class="fas fa-database"></i> Dataset</a>
 </div>
 
-<!-- Teaser 展示图 -->
-<div class="teaser-box">
-  <img src="{{ '/images/comp.png' | relative_url }}" alt="A-Harness Teaser">
-  <p style="margin-top: 1rem; font-style: italic;">A-Harness: A verification-gated runtime that unifies heterogeneous skills with adaptive routing and episodic memory.</p>
-</div>
 
 <!-- Abstract 摘要卡片 -->
 <div class="abstract-box">
