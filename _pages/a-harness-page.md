@@ -5,40 +5,71 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 ---
 
 <!-- 标题与作者 -->
-<h1 class="title is-1">Affordance Agent Harness: Verification-Gated Skill Orchestration</h1>
+<div class="hero-section">
+  <h1 class="title is-1">Affordance Agent Harness: Verification-Gated Skill Orchestration</h1>
 
-<div class="authors">
-  <a href="https://jethrojames.github.io/">Haojian Huang</a><sup>1,2*</sup>, 
-  <a href="https://tenplusgood.github.io/">Jiahao Shi</a><sup>2,3*</sup>, 
-  <a href="https://yinchuanll.github.io/">Yinchuan Li</a><sup>1,2</sup>, 
-  <a href="https://www.yingcong.me/">Yingcong Chen</a><sup>1,2†</sup>
+  <div class="authors-container">
+    <a href="https://jethrojames.github.io/" class="author-btn">
+      <img src="https://ui-avatars.com/api/?name=Haojian+Huang&background=random" class="author-avatar" alt="Haojian Huang">
+      <span class="author-name">Haojian Huang<sup class="author-sup">1,2*</sup></span>
+    </a>
+    <a href="https://tenplusgood.github.io/" class="author-btn">
+      <img src="https://ui-avatars.com/api/?name=Jiahao+Shi&background=random" class="author-avatar" alt="Jiahao Shi">
+      <span class="author-name">Jiahao Shi<sup class="author-sup">2,3*</sup></span>
+    </a>
+    <a href="#" class="author-btn">
+      <img src="https://ui-avatars.com/api/?name=Yinchuan+Li&background=random" class="author-avatar" alt="Yinchuan Li">
+      <span class="author-name">Yinchuan Li<sup class="author-sup">1,2</sup></span>
+    </a>
+    <a href="#" class="author-btn">
+      <img src="https://ui-avatars.com/api/?name=Yingcong+Chen&background=random" class="author-avatar" alt="Yingcong Chen">
+      <span class="author-name">Yingcong Chen<sup class="author-sup">1,2†</sup></span>
+    </a>
+  </div>
+
+  <!-- 地址名单 -->
+  <div class="affiliations-container">
+    <span class="affil-btn">
+      <span class="affil-name"><sup class="author-sup">1</sup>HKUST(GZ)</span>
+    </span>
+    <span class="affil-btn">
+      <span class="affil-name"><sup class="author-sup">2</sup>Knowin</span>
+    </span>
+    <span class="affil-btn">
+      <span class="affil-name"><sup class="author-sup">3</sup>Harbin Engineering University</span>
+    </span>
+  </div>
+
+  <!-- 共一和通讯提示内容 -->
+  <div class="con-cor">
+    *: Equal Contribution. †: Corresponding Author.
+  </div>
+
+  <!-- 提供引导按钮 -->
+  <div class="guidance-container">
+    <a href="https://arxiv.org/abs/2511.21021" class="guidance-btn">
+      <i class="fas fa-file-pdf"></i>
+      <span class="guidance-btn-text">Paper</span>
+    </a>
+    <a href="#" class="guidance-btn">
+      <i class="fab fa-github"></i>
+      <span class="guidance-btn-text">Code</span>
+    </a>
+    <a href="#" class="guidance-btn">
+      <i class="fas fa-video"></i>
+      <span class="guidance-btn-text">Video</span>
+    </a>
+    <a href="#" class="guidance-btn">
+      <i class="fas fa-database"></i>
+      <span class="guidance-btn-text">Dataset</span>
+    </a>
+  </div>
 </div>
 
-<div class="affiliations">
-  <sup>1</sup>HKUST(GZ), <sup>2</sup>Knowin, <sup>3</sup>Harbin Engineering University<br>
-  <sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author
-</div>
+<div class="content-section">
+  <hr class="divider">
 
-<!-- 链接按钮组 -->
-<div class="link-buttons">
-  <a href="https://arxiv.org/abs/2511.21021" class="btn"><i class="fas fa-file-pdf"></i> Paper (arXiv)</a>
-  <a href="#" class="btn"><i class="fab fa-github"></i> Code (Coming Soon)</a>
-  <a href="#" class="btn"><i class="fas fa-video"></i> Video</a>
-  <a href="#" class="btn"><i class="fas fa-database"></i> Dataset</a>
-</div>
-
-
-<!-- Abstract 摘要卡片 -->
-<div class="abstract-box">
-  <h2 class="section-title" style="margin-top: 0;">Abstract</h2>
-  <p class="text-content">
-    Affordance grounding requires identifying <em>where</em> and <em>how</em> an agent should interact in open-world scenes, where actionable regions are often small, occluded, reflective, and visually ambiguous. Recent systems therefore combine multiple skills (e.g., detection, segmentation, interaction-imagination), yet most orchestrate them with fixed pipelines that are poorly matched to per-instance difficulty, offer limited targeted recovery from intermediate errors, and fail to amortize experience over recurring objects. We observe that many failures stem not from the lack of stronger models but from the lack of a system-level ability to actively acquire and <strong>validate</strong> evidence under bounded inference cost, where "verification" must rely on relative signals rather than ground-truth labels at test time. To this end, we propose <strong>Affordance Agent Harness</strong>, a closed-loop runtime that unifies heterogeneous skills with an evidence store and cost control, retrieves episodic memories to provide priors for recurring categories, and employs a Router to adaptively select and parameterize skills. Crucially, an affordance-specific Verifier <strong>gates commitments</strong> using self-consistency, cross-scale stability, and evidence sufficiency, triggering targeted retries when needed before a final judge fuses accumulated evidence and trajectories into the prediction. Experiments on multiple affordance benchmarks and difficulty-controlled subsets demonstrate a superior accuracy–cost Pareto frontier over fixed-pipeline baselines, improving grounding quality while reducing average skill calls and latency.
-  </p>
-</div>
-
-<hr class="divider">
-
-<!-- Method Overview 方法概览 -->
+  <!-- Abstract 摘要卡片 -->
 <h2 class="section-title">Method Overview</h2>
 
 <p class="text-content" style="margin-bottom: 20px;">
@@ -520,4 +551,5 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   journal={Submitted to ECCV},
   year={2026}
 }
+</div>
 </div>
