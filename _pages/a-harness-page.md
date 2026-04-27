@@ -67,16 +67,21 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 </div>
 
 <div class="content-section">
-  <hr class="divider">
-
   <!-- Abstract 摘要卡片 -->
-<h2 class="section-title">Method Overview</h2>
+  <div class="abstract-box">
+    <h2 class="section-title" style="margin-top: 0; border-bottom: none;">Abstract</h2>
+    <p class="text-content">
+      Affordance grounding requires identifying <em>where</em> and <em>how</em> an agent should interact in open-world scenes, where actionable regions are often small, occluded, reflective, and visually ambiguous. Recent systems therefore combine multiple skills (e.g., detection, segmentation, interaction-imagination), yet most orchestrate them with fixed pipelines that are poorly matched to per-instance difficulty, offer limited targeted recovery from intermediate errors, and fail to amortize experience over recurring objects. We observe that many failures stem not from the lack of stronger models but from the lack of a system-level ability to actively acquire and <strong>validate</strong> evidence under bounded inference cost, where "verification" must rely on relative signals rather than ground-truth labels at test time. To this end, we propose <strong>Affordance Agent Harness</strong>, a closed-loop runtime that unifies heterogeneous skills with an evidence store and cost control, retrieves episodic memories to provide priors for recurring categories, and employs a Router to adaptively select and parameterize skills. Crucially, an affordance-specific Verifier <strong>gates commitments</strong> using self-consistency, cross-scale stability, and evidence sufficiency, triggering targeted retries when needed before a final judge fuses accumulated evidence and trajectories into the prediction. Experiments on multiple affordance benchmarks and difficulty-controlled subsets demonstrate a superior accuracy–cost Pareto frontier over fixed-pipeline baselines, improving grounding quality while reducing average skill calls and latency.
+    </p>
+  </div>
 
-<p class="text-content" style="margin-bottom: 20px;">
-  We propose <strong>Affordance Agent Harness (A-Harness)</strong>, a closed-loop execution framework that unifies heterogeneous skills under a budgeted, evidence-seeking decision process. Given an input, the system retrieves <em>episodic memories</em> to provide actionable priors for recurring objects. A <em>Router</em> adaptively selects the next skill and parameters based on the current evidence state and remaining budget. Crucially, an affordance-specific <em>Verifier</em> applies relative diagnostics (consistency, stability, sufficiency) to detect conflicts and trigger targeted retries. Once confidence criteria are met, a final policy fuses the accumulated evidence into the affordance prediction, and successful episodes are summarized back into memory to improve future routing.
-</p>
+  <!-- Method Overview 方法概览 -->
+  <h2 class="section-title">Method Overview</h2>
+  <p class="text-content" style="margin-bottom: 20px;">
+    We propose <strong>Affordance Agent Harness (A-Harness)</strong>, a closed-loop execution framework that unifies heterogeneous skills under a budgeted, evidence-seeking decision process. Given an input, the system retrieves <em>episodic memories</em> to provide actionable priors for recurring objects. A <em>Router</em> adaptively selects the next skill and parameters based on the current evidence state and remaining budget. Crucially, an affordance-specific <em>Verifier</em> applies relative diagnostics (consistency, stability, sufficiency) to detect conflicts and trigger targeted retries. Once confidence criteria are met, a final policy fuses the accumulated evidence into the affordance prediction, and successful episodes are summarized back into memory to improve future routing.
+  </p>
 
-<div style="text-align: center; margin-bottom: 15px;">
+  <div style="text-align: center; margin-bottom: 15px;">
   <img src="{{ '/images/comp.png' | relative_url }}" class="teaser-img" alt="Method Overview" style="max-width: 60%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
 </div>
 <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px;">
