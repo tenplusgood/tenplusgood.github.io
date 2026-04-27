@@ -8,7 +8,10 @@
     {% include head/custom.html %}
     <style>
       /* A4-Agent 风格核心样式 */
-      .project-wrapper { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; font-family: "Google Sans", sans-serif; color: #4a4a4a; }
+      body { font-family: "Google Sans", sans-serif; color: #4a4a4a; }
+      
+      /* 头部区域（标题、作者、按钮等），不限制宽度或限制较宽 */
+      .hero-section { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem 1rem 1.5rem; }
       .title.is-1 { font-size: 3rem; font-weight: 800; text-align: center; color: #363636; line-height: 1.2; margin-bottom: 2rem; border: none; }
       .authors { text-align: center; font-size: 1.4rem; margin-bottom: 1.2rem; }
       .authors a { color: #3273dc; text-decoration: none; }
@@ -16,13 +19,18 @@
       .link-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 3rem; }
       .link-buttons .btn { border-radius: 20px; padding: 0.5rem 1.2rem; background: #363636; color: white !important; font-weight: 600; font-size: 0.9rem; transition: all 0.3s; border: none; cursor: pointer; display: inline-block; text-decoration: none; }
       .link-buttons .btn:hover { background: #4a4a4a; transform: translateY(-2px); }
-      .teaser-box { width: 80%; margin: 0 auto 3rem auto; text-align: center; }
+      
+      /* 正文内容区域（从 Abstract 开始），限制较窄的宽度 */
+      .content-section { max-width: 800px; margin: 0 auto; padding: 0 1.5rem 3rem 1.5rem; }
+      
+      .teaser-box { width: 100%; margin: 0 auto 3rem auto; text-align: center; }
       .teaser-box img { width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
       .abstract-box { background: #f5f5f5; padding: 2.5rem; border-radius: 12px; margin-bottom: 3rem; }
       .abstract-box h2 { text-align: center; margin-top: 0; margin-bottom: 1.5rem; font-size: 1.8rem; }
       .abstract-box p { line-height: 1.8; text-align: justify; font-size: 1.05rem; }
       .section-title { font-size: 1.8rem; font-weight: 600; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid #eee; margin-top: 3rem; }
       .bibtex-box { background: #f0f0f0; padding: 1.5rem; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; overflow-x: auto; white-space: pre; }
+      
       /* 隐藏默认页脚，使用项目专用页脚 */
       .footer_site { display: none; }
       .project-footer { text-align: center; padding: 2rem; color: #888; font-size: 0.9rem; border-top: 1px solid #eee; margin-top: 4rem; }
@@ -40,12 +48,13 @@
       {% include masthead.html %}
     {% endunless %}
     
+    <!-- 整个页面内容由 markdown 渲染，我们在 markdown 内部使用 div 划分区域 -->
     <div class="project-wrapper">
       {{ content }}
-      
-      <div class="project-footer">
-        © 2025 Harbin Engineering University · Jiahao Shi | Adapted from A4-Agent Style
-      </div>
+    </div>
+    
+    <div class="project-footer">
+      © 2025 Harbin Engineering University · Jiahao Shi | Adapted from A4-Agent Style
     </div>
     {% include scripts.html %}
   </body>
