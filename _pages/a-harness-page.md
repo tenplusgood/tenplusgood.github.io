@@ -10,9 +10,9 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 
   <div class="authors">
     <a href="http://www.wonghougin.me/">Haojian Huang</a><sup>1,2*</sup>, 
-    <a href="https://tenplusgood.github.io/">Jiahao Shi</a><sup>2,3*</sup>, 
-    <a href="https://yinchuanll.github.io/">Yinchuan Li</a><sup>1,2</sup>, 
-    <a href="https://www.yingcong.me/">Yingcong Chen</a><sup>1,2†</sup>
+    <a href="https://tenplusgood.github.io/"><strong>Jiahao Shi</strong></a><sup>2,3*</sup>, 
+    Yinchuan Li<sup>1,2</sup>, 
+    Yingcong Chen<sup>1,2†</sup>
   </div>
 
   <div class="affiliations">
@@ -23,24 +23,25 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   <!-- 链接按钮组 -->
   <div class="link-buttons">
     <a href="https://arxiv.org/abs/2511.21021" class="btn"><i class="fas fa-file-pdf"></i> Paper (arXiv)</a>
-    <a href="#" class="btn"><i class="fab fa-github"></i> Code </a>
+    <a href="#" class="btn"><i class="fab fa-github"></i> Code (Coming Soon)</a>
+
   </div>
 </div>
 
 <div class="content-section">
   <!-- Abstract 摘要卡片 -->
-  <div class="abstract-box" style="text-align: center;">
-    <h2 class="section-title" style="margin-top: 0; border-bottom: none;">Abstract</h2>
+<div class="abstract-box" style="text-align: center;">
+  <h2 class="section-title" style="margin-top: 0; border-bottom: none; text-align: center; font-weight: bold; font-size: 28px;">Abstract</h2>
     <p class="text-content" style="text-align: justify; display: inline-block;">
       Affordance grounding requires identifying <em>where</em> and <em>how</em> an agent should interact in open-world scenes, where actionable regions are often small, occluded, reflective, and visually ambiguous. Recent systems therefore combine multiple skills (e.g., detection, segmentation, interaction-imagination), yet most orchestrate them with fixed pipelines that are poorly matched to per-instance difficulty, offer limited targeted recovery from intermediate errors, and fail to amortize experience over recurring objects. We observe that many failures stem not from the lack of stronger models but from the lack of a system-level ability to actively acquire and <strong>validate</strong> evidence under bounded inference cost, where "verification" must rely on relative signals rather than ground-truth labels at test time. To this end, we propose <strong>Affordance Agent Harness</strong>, a closed-loop runtime that unifies heterogeneous skills with an evidence store and cost control, retrieves episodic memories to provide priors for recurring categories, and employs a Router to adaptively select and parameterize skills. Crucially, an affordance-specific Verifier <strong>gates commitments</strong> using self-consistency, cross-scale stability, and evidence sufficiency, triggering targeted retries when needed before a final judge fuses accumulated evidence and trajectories into the prediction. Experiments on multiple affordance benchmarks and difficulty-controlled subsets demonstrate a superior accuracy–cost Pareto frontier over fixed-pipeline baselines, improving grounding quality while reducing average skill calls and latency.
     </p>
   </div>
 
-  <!-- Method Overview 方法概览 -->
-  <h2 class="section-title">Method Overview</h2>
-  <p class="text-content" style="margin-bottom: 20px;">
-    We propose <strong>Affordance Agent Harness (A-Harness)</strong>, a closed-loop execution framework that unifies heterogeneous skills under a budgeted, evidence-seeking decision process. Given an input, the system retrieves <em>episodic memories</em> to provide actionable priors for recurring objects. A <em>Router</em> adaptively selects the next skill and parameters based on the current evidence state and remaining budget. Crucially, an affordance-specific <em>Verifier</em> applies relative diagnostics (consistency, stability, sufficiency) to detect conflicts and trigger targeted retries. Once confidence criteria are met, a final policy fuses the accumulated evidence into the affordance prediction, and successful episodes are summarized back into memory to improve future routing.
-  </p>
+<!-- Method Overview 方法概览 -->
+<h2 class="section-title" style="text-align: center; font-weight: bold; font-size: 28px;">Method Overview</h2>
+<p class="text-content" style="margin-bottom: 20px;">
+  We propose <strong>Affordance Agent Harness (A-Harness)</strong>, a novel closed-loop execution framework that unifies heterogeneous skills under a budgeted, evidence-seeking decision process. A-Harness addresses key challenges in open-world affordance grounding: fixed skill pipelines, lack of closed-loop correction, and isolated reasoning. Our method introduces adaptive routing, verification-driven retries, and episodic memory, achieving state-of-the-art performance across multiple benchmarks while reducing average skill calls and latency.
+</p>
 
   <div style="text-align: center; margin-bottom: 15px;">
   <img src="{{ '/images/comp.png' | relative_url }}" class="teaser-img" alt="Method Overview" style="max-width: 60%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
@@ -52,7 +53,7 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 <hr class="divider">
 
 <!-- Method details 方法细节 -->
-<h2 class="section-title">Method Details</h2>
+<h2 class="section-title" style="text-align: center; font-weight: bold; font-size: 28px;">Method Details</h2>
 <div style="text-align: center; margin-bottom: 15px;">
   <img src="{{ '/images/method.png' | relative_url }}" class="teaser-img" alt="Method Details" style="max-width: 45%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
 </div>
@@ -77,8 +78,8 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   <li style="margin-bottom: 10px;"><strong>Verifier</strong>: Sidesteps the absence of ground truth by using relative diagnostics (consistency, stability, sufficiency) to gate commitments and trigger <strong>targeted retries</strong>.</li>
 </ul>
 
-  <!-- Results 实验结果 -->
-  <h2 class="section-title">Quantitative Results</h2>
+<!-- Results 实验结果 -->
+<h2 class="section-title" style="text-align: center; font-weight: bold; font-size: 28px;">Quantitative Results</h2>
   <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 1rem; margin-bottom: 3rem;">
     
     <!-- Table 1: ReasonAff & UMD -->
@@ -509,7 +510,7 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   </div>
 
 <!-- BibTeX 引用 -->
-<h2 class="section-title">BibTeX</h2>
+<h2 class="section-title" style="text-align: center; font-weight: bold; font-size: 28px;">BibTeX</h2>
 <div class="bibtex-box">
 @article{huang2026aharness,
   title={Affordance Agent Harness: Verification-Gated Skill Orchestration},
