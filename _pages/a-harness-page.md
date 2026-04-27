@@ -54,7 +54,9 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 
 <!-- Method details 方法细节 -->
 <h2 class="section-title">Method Details</h2>
-<img src="{{ '/images/method.png' | relative_url }}" class="teaser-img" alt="Method Details" style="margin-bottom: 15px;">
+<div style="text-align: center; margin-bottom: 15px;">
+  <img src="{{ '/images/method.png' | relative_url }}" class="teaser-img" alt="Method Details" style="max-width: 45%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
+</div>
 <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px; margin-bottom: 40px;">
   <strong>Overview of the A-Harness framework, illustrating iterative decision-making.</strong> The Verifier dynamically assesses evidence, guiding the Router to either re-plan or output results, while storing the trajectory in memory. The skill outcome $o_t$ is stored in the evidence store and combined with existing evidence to support the next step.
 </p>
