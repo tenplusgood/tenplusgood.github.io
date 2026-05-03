@@ -9,7 +9,7 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
   <h1 class="title is-1">Affordance Agent Harness: Verification-Gated Skill Orchestration</h1>
 
   <div class="authors">
-    <a href="http://www.wonghougin.me/">Haojian Huang</a><sup>1,2*</sup>, 
+    <a href="https://jethrojames.github.io/">Haojian Huang</a><sup>1,2*</sup>, 
     <a href="https://tenplusgood.github.io/">Jiahao Shi</a><sup>2,3*</sup>, 
     <a href="https://yinchuanll.github.io/">Yinchuan Li</a><sup>1,2</sup>, 
     <a href="https://www.yingcong.me/">Yingcong Chen</a><sup>1,2†</sup>
