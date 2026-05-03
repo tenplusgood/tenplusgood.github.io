@@ -24,7 +24,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/comp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- *Affordance Agent Harness: Verification-Gated Skill Orchestration*. Haojian Huang, **Jiahao Shi**, Yinchuan Li, Yingcong Chen (Submitted to **ECCV** 2026). [[Project Page]](https://tenplusgood.github.io/a-harness-page/) [[Code]](https://github.com/tenplusgood/A-Harness)
+- *Affordance Agent Harness: Verification-Gated Skill Orchestration*. Haojian Huang*, **Jiahao Shi***, Yinchuan Li, Yingcong Chen (Submitted to **ECCV** 2026). [[Project Page]](https://tenplusgood.github.io/a-harness-page/) [[Code]](https://github.com/tenplusgood/A-Harness)
   > This work designed and implemented an embodied intelligent skill orchestration framework (A-Harness) based on verification gating. Through a closed-loop verification mechanism and dual-layer memory enhancement, it significantly reduces inference costs while achieving high-precision interaction point localization in an open world.
 
 </div>
@@ -33,7 +33,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/tailer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. Peiting Yang, **Jiahao Shi**, Caiyi Xu, Ming Liu, Yanxia Wu, Rongsheng Li (Submitted to **ICML** 2026).  
+-	*AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. Peiting Yang*, **Jiahao Shi***, Caiyi Xu*, Ming Liu, Yanxia Wu, Rongsheng Li (**ICML** 2026).  
   > This work proposes a cost-aware framework (AgentTailor) that evaluates the semantic contribution of communication edges through an edge-judgment mechanism and uses an edge prediction network (EPN) to estimate the utility of edges through virtual execution.
 
 </div>
@@ -42,7 +42,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/flowchat_new.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- *[Structure-Aware Prototype Guided Trusted Multi-View Classification](https://arxiv.org/abs/2511.21021)*. Haojian Huang, **Jiahao Shi**, Zhe Liu, Harold Haodong Chen, Han Fang, Hao Sun, Zhongjiang He (arxiv 2025).  
+- *[Structure-Aware Prototype Guided Trusted Multi-View Classification](https://arxiv.org/abs/2511.21021)*. Haojian Huang*, **Jiahao Shi***, Zhe Liu, Harold Haodong Chen, Han Fang, Hao Sun, Zhongjiang He (arxiv 2025).  
   > This work introduces a structure-aware prototype learning mechanism and develops a prototype-guided fine-grained fusion strategy.
   
 </div>
@@ -60,7 +60,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/eswa.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*[Non-Parametric Double-Layer Locally Weighted k-Means Clustering for Multi-View Data](https://www.sciencedirect.com/science/article/abs/pii/S0957417425046202)*. Zhe Liu, **Jiahao Shi**, Juan Liao, Wulfran Fendzi Mbasso, Mehdi Hosseinzadeh (**Expert Systems With Applications** 2026). 
+-	*[Non-Parametric Double-Layer Locally Weighted k-Means Clustering for Multi-View Data](https://www.sciencedirect.com/science/article/abs/pii/S0957417425046202)*. Zhe Liu*, **Jiahao Shi***, Juan Liao, Wulfran Fendzi Mbasso, Mehdi Hosseinzadeh (**Expert Systems With Applications** 2026). 
   > This work proposes a nonparametric two-layer locally weighted k-means (NDL-WKM) method that can achieve adaptive and fine-grained clustering without any additional parameters.
   
 </div>
