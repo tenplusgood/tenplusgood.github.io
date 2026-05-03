@@ -20,11 +20,52 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <span class='anchor' id='-news'></span>
 
 # 📰 News
-- *2026.05* &nbsp;🎉 Our paper **AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure** is accepted to **ICML 2026**.
-- *2025.12* &nbsp;🎉 One paper accepted to **IEEE Transactions on Fuzzy Systems**.
-- *2025.12* &nbsp;🎉 One paper accepted to **Expert Systems With Applications**.
-- *2025.10* &nbsp;🎉 One paper accepted to **CMES-Computer Modeling in Engineering & Sciences**
-- *2025.05* &nbsp;🎉 One paper accepted to **International Journal of General Systems**.
+<style>
+.news-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.95em; }
+.news-table tr { border-bottom: 1px solid #eaecef; }
+.news-table td { padding: 12px 8px; vertical-align: middle; }
+.news-date { color: #858585; font-family: 'Courier New', Courier, monospace; white-space: nowrap; width: 80px; }
+.news-badge { 
+    background-color: #fbeae9; 
+    color: #d93025; 
+    padding: 4px 10px; 
+    border-radius: 12px; 
+    font-size: 0.85em; 
+    font-weight: 600; 
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+}
+.news-text { color: #333; line-height: 1.5; }
+</style>
+
+<table class="news-table">
+  <tr>
+    <td class="news-date">2026.05</td>
+    <td><span class="news-badge">ICML 2026</span></td>
+    <td class="news-text">🎉 Our paper <strong>AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure</strong> is accepted to <strong>ICML 2026</strong>.</td>
+  </tr>
+  <tr>
+    <td class="news-date">2025.12</td>
+    <td><span class="news-badge">IEEE TFS</span></td>
+    <td class="news-text">🎉 One paper accepted to <strong>IEEE Transactions on Fuzzy Systems</strong>.</td>
+  </tr>
+  <tr>
+    <td class="news-date">2025.12</td>
+    <td><span class="news-badge">ESWA</span></td>
+    <td class="news-text">🎉 One paper accepted to <strong>Expert Systems With Applications</strong>.</td>
+  </tr>
+  <tr>
+    <td class="news-date">2025.10</td>
+    <td><span class="news-badge">CMES</span></td>
+    <td class="news-text">🎉 One paper accepted to <strong>CMES-Computer Modeling in Engineering & Sciences</strong>.</td>
+  </tr>
+  <tr>
+    <td class="news-date">2025.05</td>
+    <td><span class="news-badge">IJGS</span></td>
+    <td class="news-text">🎉 One paper accepted to <strong>International Journal of General Systems</strong>.</td>
+  </tr>
+</table>
 <span class='anchor' id='-kycg'></span>
 
 # 📝 Publications & Preprints
