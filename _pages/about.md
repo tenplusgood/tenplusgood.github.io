@@ -70,7 +70,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 
 # 📝 Publications & Preprints
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/comp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/A-Harness-flowchat.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 - *Affordance Agent Harness: Verification-Gated Skill Orchestration*. Haojian Huang*, **Jiahao Shi***, Yinchuan Li, Yingcong Chen (Submitted to **ECCV** 2026). [[Project Page]](https://tenplusgood.github.io/a-harness-page/) [[Code]](https://github.com/tenplusgood/A-Harness)
