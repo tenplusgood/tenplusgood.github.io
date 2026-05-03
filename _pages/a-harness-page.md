@@ -44,7 +44,7 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 </p>
 
   <div style="text-align: center; margin-bottom: 15px;">
-  <img src="{{ '/images/comp.png' | relative_url }}" class="teaser-img" alt="Method Overview" style="max-width: 60%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
+  <img src="{{ '/images/A-Harness-flowchat.png' | relative_url }}" class="teaser-img" alt="Method Overview" style="max-width: 80%; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 1px 1px 4px 1px #afafaf;">
 </div>
 <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; padding: 0 20px;">
   <strong>Comparison between a prior affordance agent with a fixed reasoning graph and our A-Harness–enabled agent.</strong> While prior systems execute skills along a predefined script with late fusion and no commitment gating, A-Harness introduces a context-aware, budgeted closed-loop runtime with adaptive routing, verification-driven retries, and persistent memory for reusable experience.
