@@ -16,7 +16,15 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 
 # 🎓 Educations
 - *2023.09 - 2027.06*, <a href="https://www.hrbeu.edu.cn/"><img class="jpg" src="/images/HEU.jpg" width="23pt"></a> Harbin Engineering University, Computer Science and Technology, Heilongjiang, Harbin, Undergraduate student
-  
+
+<span class='anchor' id='-news'></span>
+
+# 📰 News
+- *2026.05* &nbsp;🎉 Our paper **AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure** is accepted to **ICML 2026**.
+- *2025.12* &nbsp;🎉 One paper accepted to **IEEE Transactions on Fuzzy Systems**.
+- *2025.12* &nbsp;🎉 One paper accepted to **Expert Systems With Applications**.
+- *2025.10* &nbsp;🎉 One paper accepted to **CMES-Computer Modeling in Engineering & Sciences**
+- *2025.05* &nbsp;🎉 One paper accepted to **International Journal of General Systems**.
 <span class='anchor' id='-kycg'></span>
 
 # 📝 Publications & Preprints
