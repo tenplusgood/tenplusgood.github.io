@@ -532,7 +532,7 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 @article{huang2026aharness,
   title={Affordance Agent Harness: Verification-Gated Skill Orchestration},
   author={Huang, Haojian and Shi, Jiahao and Li, Yinchuan and Chen, Yingcong},
-  journal={Submitted to ECCV},
+  journal={tbd},
   year={2026}
 }
 </div>
