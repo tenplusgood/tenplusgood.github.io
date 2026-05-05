@@ -529,11 +529,14 @@ title: "Affordance Agent Harness: Verification-Gated Skill Orchestration"
 <!-- BibTeX 引用 -->
 <h2 class="section-title" style="text-align: center; font-weight: bold; font-size: 28px;">BibTeX</h2>
 <div class="bibtex-box">
-@article{huang2026aharness,
-  title={Affordance Agent Harness: Verification-Gated Skill Orchestration},
-  author={Huang, Haojian and Shi, Jiahao and Li, Yinchuan and Chen, Yingcong},
-  journal={tbd},
-  year={2026}
+@misc{huang2026affordanceagentharnessverificationgated,
+      title={Affordance Agent Harness: Verification-Gated Skill Orchestration}, 
+      author={Haojian Huang and Jiahao Shi and Yinchuan Li and Yingcong Chen},
+      year={2026},
+      eprint={2605.00663},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2605.00663}, 
 }
 </div>
 </div>
