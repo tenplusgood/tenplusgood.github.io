@@ -73,7 +73,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/A-Harness-flowchat.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- *Affordance Agent Harness: Verification-Gated Skill Orchestration*. Haojian Huang*, **Jiahao Shi***, Yinchuan Li, Yingcong Chen (Submitted to **ECCV** 2026). [[Project Page]](https://tenplusgood.github.io/a-harness-page/) [[Code]](https://github.com/tenplusgood/A-Harness)
+- *[Affordance Agent Harness: Verification-Gated Skill Orchestration](https://arxiv.org/abs/2605.00663)*. Haojian Huang*, **Jiahao Shi***, Yinchuan Li, Yingcong Chen (Submitted to **ECCV** 2026). [[Project Page]](https://tenplusgood.github.io/a-harness-page/) [[Code]](https://github.com/tenplusgood/A-Harness)
   > This work designed and implemented an embodied intelligent skill orchestration framework (A-Harness) based on verification gating. Through a closed-loop verification mechanism and dual-layer memory enhancement, it significantly reduces inference costs while achieving high-precision interaction point localization in an open world.
 
 </div>
@@ -82,7 +82,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/tailer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. Peiting Yang*, **Jiahao Shi***, Caiyi Xu*, Ming Liu, Yanxia Wu, Rongsheng Li (**ICML** 2026).  
+-	*AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. Peiting Yang*, **Jiahao Shi***, Caiyi Xu*, Ming Liu, Yanxia Wu, Rongsheng Li (**ICML** 2026). [[Code]](https://github.com/Pt3Y/AgentTailor) 
   > This work proposes a cost-aware framework (AgentTailor) that evaluates the semantic contribution of communication edges through an edge-judgment mechanism and uses an edge prediction network (EPN) to estimate the utility of edges through virtual execution.
 
 </div>
