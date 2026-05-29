@@ -82,7 +82,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/AgentTailor_overview.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure*. Peiting Yang*, **Jiahao Shi***, Caiyi Xu*, Ming Liu, Yanxia Wu, Rongsheng Li (**ICML** 2026). [[Code]](https://github.com/Pt3Y/AgentTailor) 
+-	*[AgentTailor: A Semantic-Aware LLM-Based Multi-Agent System with Actor-Critic Structure](https://icml.cc/virtual/2026/poster/60754)*. Peiting Yang*, **Jiahao Shi***, Caiyi Xu*, Ming Liu, Yanxia Wu, Rongsheng Li (**ICML** 2026). [[Code]](https://github.com/Pt3Y/AgentTailor) 
   > This work proposes a cost-aware framework (AgentTailor) that evaluates the semantic contribution of communication edges through an edge-judgment mechanism and uses an edge prediction network (EPN) to estimate the utility of edges through virtual execution.
 
 </div>
