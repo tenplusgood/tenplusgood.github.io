@@ -91,7 +91,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/flowchat_new.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*Selective Evidence Acquisition for Compact Affordance Agents*. Haojian Huang*, **Jiahao Shi***, Junhao Guo, Yinchuan Li, Yingcong Chen (Submitted to **CoRL** 2026).
+-	*Selective Evidence Acquisition for Compact Affordance Agents*. Haojian Huang*, **Jiahao Shi***, Junhao Guo, Yinchuan Li, Yingcong Chen. (Submitted to **CoRL** 2026)
   > This work proposes a selective evidence acquisition framework (SEA-Afford) that determines whether external tool exploration is necessary before committing to an affordance mask, preserving reliable direct predictions while avoiding harmful or unnecessary evidence gathering. It introduces AFFORDTRAJ-10K to train compact affordance agents with reasoning, tool-use trajectories, and commit decisions, enabling improved affordance precision, generalization, and real-robot execution under a shared executor.
 
 </div>
