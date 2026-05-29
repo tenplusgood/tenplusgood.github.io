@@ -91,7 +91,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/SEA-Afford.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*Selective Evidence Acquisition for Compact Affordance Agents*. Haojian Huang*, **Jiahao Shi***, Junhao Guo, Yinchuan Li, Yingcong Chen. (Submitted to **CoRL** 2026)
+-	*Selective Evidence Acquisition for Compact Affordance Agents*. Haojian Huang<sup>*</sup>, **Jiahao Shi**<sup>*</sup>, Junhao Guo, Yinchuan Li, Yingcong Chen. (Submitted to **CoRL** 2026)
   > This work proposes a selective evidence acquisition framework (SEA-Afford) that determines whether external tool exploration is necessary before committing to an affordance mask, preserving reliable direct predictions while avoiding harmful or unnecessary evidence gathering. It introduces AFFORDTRAJ-10K to train compact affordance agents with reasoning, tool-use trajectories, and commit decisions, enabling improved affordance precision, generalization, and real-robot execution under a shared executor.
 
 </div>
@@ -100,7 +100,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/flowchat_new.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-- *[Structure-Aware Prototype Guided Trusted Multi-View Classification](https://arxiv.org/abs/2511.21021)*. Haojian Huang*, **Jiahao Shi***, Zhe Liu, Harold Haodong Chen, Han Fang, Hao Sun, Zhongjiang He (arxiv 2025).  
+- *[Structure-Aware Prototype Guided Trusted Multi-View Classification](https://arxiv.org/abs/2511.21021)*. Haojian Huang<sup>*</sup>, **Jiahao Shi**<sup>*</sup>, Zhe Liu, Harold Haodong Chen, Han Fang, Hao Sun, Zhongjiang He (arxiv 2025).  
   > This work introduces a structure-aware prototype learning mechanism and develops a prototype-guided fine-grained fusion strategy.
   
 </div>
@@ -118,7 +118,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/eswa.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*[Non-Parametric Double-Layer Locally Weighted k-Means Clustering for Multi-View Data](https://www.sciencedirect.com/science/article/abs/pii/S0957417425046202)*. Zhe Liu*, **Jiahao Shi***, Juan Liao, Wulfran Fendzi Mbasso, Mehdi Hosseinzadeh (**Expert Systems With Applications** 2026). 
+-	*[Non-Parametric Double-Layer Locally Weighted k-Means Clustering for Multi-View Data](https://www.sciencedirect.com/science/article/abs/pii/S0957417425046202)*. Zhe Liu<sup>*</sup>, **Jiahao Shi**<sup>*</sup>, Juan Liao, Wulfran Fendzi Mbasso, Mehdi Hosseinzadeh (**Expert Systems With Applications** 2026). 
   > This work proposes a nonparametric two-layer locally weighted k-means (NDL-WKM) method that can achieve adaptive and fine-grained clustering without any additional parameters.
   
 </div>
