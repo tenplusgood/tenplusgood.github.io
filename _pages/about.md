@@ -88,7 +88,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/flowchat_new.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/SEA-Afford.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	*Selective Evidence Acquisition for Compact Affordance Agents*. Haojian Huang*, **Jiahao Shi***, Junhao Guo, Yinchuan Li, Yingcong Chen. (Submitted to **CoRL** 2026)
@@ -97,7 +97,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/SEA-Afford.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/flowchat_new.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
 - *[Structure-Aware Prototype Guided Trusted Multi-View Classification](https://arxiv.org/abs/2511.21021)*. Haojian Huang*, **Jiahao Shi***, Zhe Liu, Harold Haodong Chen, Han Fang, Hao Sun, Zhongjiang He (arxiv 2025).  
