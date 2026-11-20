@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Jiahao Shi is an undergraduate student at Harbin Engineering University, majoring in Computer Science and Technology, where he ranks **1st** out of 242 students(1/242) with a weighted average of **94.9/100**. His research interests span Agent, Multi-agent Systems, Trusted AI and Multi-view Clustering. He is dedicated to advancing the frontiers of intelligent agents and reliable data fusion.
+Jiahao Shi is an undergraduate student at Harbin Engineering University, majoring in Computer Science and Technology, where he ranks **1st** out of 241 students(1/241) with a weighted average of **95.1/100**. He will be pursuing a master’s degree at Nanjing University. His research interests span Agent, EmbodiedAI, Multi-agent Systems, Trusted AI and Multi-view Clustering. He is dedicated to advancing the frontiers of intelligent agents and reliable data fusion.
 
 <span class='anchor' id='-xl'></span>
 
