@@ -74,7 +74,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/A-Harness-flowchat.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- *[Affordance Agent Harness: Verification-Gated Skill Orchestration](https://arxiv.org/abs/2605.00663)*. Haojian Huang<sup>*</sup>, **Jiahao Shi**<sup>*</sup>, Yinchuan Li, Yingcong Chen (Submitted to **ECCV** 2026). [[Project Page]](https://tenplusgood.github.io/a-harness-page/) [[Code]](https://github.com/tenplusgood/A-Harness)
+- *[Affordance Agent Harness: Verification-Gated Skill Orchestration](https://arxiv.org/abs/2605.00663)*. Haojian Huang<sup>*</sup>, **Jiahao Shi**<sup>*</sup>, Yinchuan Li, Yingcong Chen (arxiv 2026). [[Project Page]](https://tenplusgood.github.io/a-harness-page/) [[Code]](https://github.com/tenplusgood/A-Harness)
   > This work designed and implemented an embodied intelligent skill orchestration framework (A-Harness) based on verification gating. Through a closed-loop verification mechanism and dual-layer memory enhancement, it significantly reduces inference costs while achieving high-precision interaction point localization in an open world.
 
 </div>
@@ -92,7 +92,7 @@ Jiahao Shi is an undergraduate student at Harbin Engineering University, majorin
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/SEA-Afford.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	*Selective Evidence Acquisition for Compact Affordance Agents*. Haojian Huang<sup>*</sup>, **Jiahao Shi**<sup>*</sup>, Junhao Guo, Yinchuan Li, Yingcong Chen. (Submitted to **CoRL** 2026)
+-	*Selective Evidence Acquisition for Compact Affordance Agents*. Haojian Huang<sup>*</sup>, **Jiahao Shi**<sup>*</sup>, Junhao Guo, Yinchuan Li, Yingcong Chen. (Submitted to **ICRA** 2027)
   > This work proposes a selective evidence acquisition framework (SEA-Afford) that determines whether external tool exploration is necessary before committing to an affordance mask, preserving reliable direct predictions while avoiding harmful or unnecessary evidence gathering. It introduces AFFORDTRAJ-10K to train compact affordance agents with reasoning, tool-use trajectories, and commit decisions, enabling improved affordance precision, generalization, and real-robot execution under a shared executor.
 
 </div>
